@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wake PC - Control your computer remotely from your iPhone. Simple, fast, and free.">
+    <title>Wake PC - Remote PC Control from iPhone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="app-icon.png" alt="Wake PC" class="nav-icon">
+                <span class="nav-title">Wake PC</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link" data-translate="nav_features">Features</a>
+                <a href="#why-us" class="nav-link" data-translate="nav_why">Why Wake PC?</a>
+                <a href="#download" class="nav-link" data-translate="nav_download">Download</a>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="uk">UK</button>
+                </div>
+                <a href="#download" class="btn-primary" data-translate="btn_get_started">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container-centered">
+            <div class="hero-content-centered">
+                <h1 class="hero-title">
+                    <span data-translate="hero_title_1">Wake your PC</span><br>
+                    <span class="gradient-text" data-translate="hero_title_2">from anywhere</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">
+                    Turn on your PC remotely for free. Upgrade to Premium for full power management, volume control, and unlimited computers.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-hero">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span data-translate="hero_btn_appstore">Download on App Store</span>
+                    </a>
+                    <a href="#download" class="btn-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+                            <polyline points="7 11 12 16 17 11"/>
+                            <line x1="12" y1="16" x2="12" y2="4"/>
+                        </svg>
+                        <span data-translate="hero_btn_agent">Windows Agent</span>
+                    </a>
+                </div>
+                <p class="hero-note" data-translate="hero_note">Free • No account required • Works on local network</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Wake PC Section -->
+    <section id="why-us" class="why-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="why_title">Why Wake PC?</h2>
+            <p class="section-subtitle" data-translate="why_subtitle">Unlike TeamViewer, AnyDesk, or Chrome Remote Desktop</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-icon">⚡</div>
+                    <h3 data-translate="why_fast_title">Lightning Fast</h3>
+                    <p data-translate="why_fast_desc">Direct Wake-on-LAN packets. No cloud relay, no lag. Commands execute instantly on your local network.</p>
+                    <span class="vs-badge" data-translate="why_fast_badge">vs slow remote desktop protocols</span>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🔒</div>
+                    <h3 data-translate="why_private_title">100% Private</h3>
+                    <p data-translate="why_private_desc">Everything stays on YOUR network. No data sent to servers. No accounts. No tracking. Your privacy is guaranteed.</p>
+                    <span class="vs-badge" data-translate="why_private_badge">vs cloud-based tools that log everything</span>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">💰</div>
+                    <h3 data-translate="why_free_title">Free to Start</h3>
+                    <p data-translate="why_free_desc">Core Wake-on-LAN feature completely free. Premium features like shutdown, volume control, and multiple PCs available at $2.99/month with 3-day free trial.</p>
+                    <span class="vs-badge" data-translate="why_free_badge">vs TeamViewer's mandatory $49/month</span>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🎯</div>
+                    <h3 data-translate="why_simple_title">Simple & Focused</h3>
+                    <p data-translate="why_simple_desc">Does one thing perfectly: power management. No bloat, no complexity, no unnecessary features.</p>
+                    <span class="vs-badge" data-translate="why_simple_badge">vs bloated 500MB remote desktop apps</span>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🚀</div>
+                    <h3 data-translate="why_native_title">Native iOS Experience</h3>
+                    <p data-translate="why_native_desc">Built with SwiftUI. Feels like a true iOS app. 13 beautiful themes, haptic feedback, smooth 60fps animations.</p>
+                    <span class="vs-badge" data-translate="why_native_badge">vs clunky web-based interfaces</span>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🔋</div>
+                    <h3 data-translate="why_battery_title">Battery Friendly</h3>
+                    <p data-translate="why_battery_desc">No background services, no constant polling. Only active when you use it.</p>
+                    <span class="vs-badge" data-translate="why_battery_badge">vs battery-draining remote desktop apps</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="features_title">Everything you need</h2>
+            <p class="section-subtitle" data-translate="features_subtitle">Powerful features in a beautiful package</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3 data-translate="feature_wol_title">Wake-on-LAN</h3>
+                    <p data-translate="feature_wol_desc">Turn on your PC remotely from anywhere in your home</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-translate="feature_power_title">Power Management</h3>
+                    <p data-translate="feature_power_desc">Shutdown, restart, or sleep with one tap</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3 data-translate="feature_volume_title">Volume Control</h3>
+                    <p data-translate="feature_volume_desc">Adjust system volume and mute remotely</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3 data-translate="feature_multi_title">Multiple PCs</h3>
+                    <p data-translate="feature_multi_desc">Manage unlimited computers with custom profiles</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-translate="feature_themes_title">13 Beautiful Themes</h3>
+                    <p data-translate="feature_themes_desc">Ocean, Fire, Forest, Neon and more</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 data-translate="feature_qr_title">QR Code Setup</h3>
+                    <p data-translate="feature_qr_desc">Scan and connect in seconds</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 data-translate="feature_lang_title">Multi-language</h3>
+                    <p data-translate="feature_lang_desc">English, Russian, Ukrainian</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 data-translate="feature_secure_title">Secure</h3>
+                    <p data-translate="feature_secure_desc">Token-based authentication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="pricing_title">Simple, transparent pricing</h2>
+            <p class="section-subtitle" data-translate="pricing_subtitle">Start free, upgrade when you need more</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card free-card">
+                    <div class="pricing-badge" data-translate="pricing_free_badge">FREE</div>
+                    <h3 class="pricing-title" data-translate="pricing_free_title">Basic</h3>
+                    <div class="pricing-price"><span data-translate="pricing_free_price">$0</span><span data-translate="pricing_free_period">/forever</span></div>
+                    <p class="pricing-description" data-translate="pricing_free_desc">Perfect for single PC users</p>
+                    
+                    <ul class="pricing-features">
+                        <li>✅ <span data-translate="pricing_free_feat1">Wake-on-LAN (turn on PC)</span></li>
+                        <li>✅ <span data-translate="pricing_free_feat2">1 computer profile</span></li>
+                        <li>✅ <span data-translate="pricing_free_feat3">Ocean theme</span></li>
+                        <li>✅ <span data-translate="pricing_free_feat4">QR code setup</span></li>
+                        <li>❌ <span data-translate="pricing_free_feat5">Power management</span></li>
+                        <li>❌ <span data-translate="pricing_free_feat6">Volume control</span></li>
+                        <li>❌ <span data-translate="pricing_free_feat7">Multiple PCs</span></li>
+                        <li>❌ <span data-translate="pricing_free_feat8">All 13 themes</span></li>
+                    </ul>
+                    
+                    <a href="#download" class="pricing-button free-button" data-translate="pricing_free_btn">Download Free</a>
+                </div>
+
+                <div class="pricing-card premium-card">
+                    <div class="pricing-badge premium-badge" data-translate="pricing_premium_badge">PREMIUM</div>
+                    <h3 class="pricing-title" data-translate="pricing_premium_title">Premium</h3>
+                    <div class="pricing-price"><span data-translate="pricing_premium_price">$2.99</span><span data-translate="pricing_premium_period">/month</span></div>
+                    <p class="pricing-description" data-translate="pricing_premium_desc">Full control of all your computers</p>
+                    
+                    <ul class="pricing-features">
+                        <li>✅ <span data-translate="pricing_premium_feat1">Everything in Basic</span></li>
+                        <li>✅ <strong data-translate="pricing_premium_feat2">Shutdown, Restart, Sleep</strong></li>
+                        <li>✅ <strong data-translate="pricing_premium_feat3">Volume control + mute</strong></li>
+                        <li>✅ <strong data-translate="pricing_premium_feat4">Unlimited computers</strong></li>
+                        <li>✅ <strong data-translate="pricing_premium_feat5">All 13 beautiful themes</strong></li>
+                        <li>✅ <span data-translate="pricing_premium_feat6">Priority support</span></li>
+                        <li>✅ <span data-translate="pricing_premium_feat7">Future features included</span></li>
+                    </ul>
+                    
+                    <a href="#download" class="pricing-button premium-button" data-translate="pricing_premium_btn">Try 3 Days Free</a>
+                    <p class="pricing-note" data-translate="pricing_premium_note">Cancel anytime • $24.99/year option available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="screenshots_title">Beautiful design, powerful features</h2>
+            <div class="screenshots-scroll">
+                <img src="screenshot1.png" alt="Wake PC - Main Screen" class="screenshot">
+                <img src="screenshot2.png" alt="Wake PC - Themes" class="screenshot">
+                <img src="screenshot3.png" alt="Wake PC - Multiple PCs" class="screenshot">
+                <img src="screenshot4.png" alt="Wake PC - Help" class="screenshot">
+                <img src="screenshot5.png" alt="Wake PC - Get Started" class="screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container download-container">
+            <div class="download-content">
+                <h2 class="download-title" data-translate="download_title">Get started in 3 easy steps</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number" data-translate="step1_number">1</div>
+                        <div class="step-content">
+                            <h3 data-translate="step1_title">Download the app</h3>
+                            <p data-translate="step1_desc">Get Wake PC from the App Store</p>
+                            <a href="#" class="app-store-badge">
+                                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number" data-translate="step2_number">2</div>
+                        <div class="step-content">
+                            <h3 data-translate="step2_title">Install Windows Agent</h3>
+                            <p data-translate="step2_desc">Download and run as administrator on your PC</p>
+                            <a href="https://drive.google.com/drive/folders/1A9BvfrKtccw1aVQh8Baumt6jZaWagrS5?usp=drive_link" class="btn-download">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span data-translate="step2_btn">Download WakeAgent.exe</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number" data-translate="step3_number">3</div>
+                        <div class="step-content">
+                            <h3 data-translate="step3_title">Scan QR & Connect</h3>
+                            <p data-translate="step3_desc">Open iPhone Camera, scan the QR code from agent, tap "Open in Wake PC"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <img src="app-icon.png" alt="Wake PC" class="footer-icon">
+                <p data-translate="footer_copyright">Wake PC © 2025</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://gist.github.com/IvanPerk1/abbc2bef28f2fca1021d93ad5d4869d7" target="_blank" data-translate="footer_privacy">Privacy Policy</a>
+                <a href="mailto:i.perk1@icloud.com" data-translate="footer_contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
