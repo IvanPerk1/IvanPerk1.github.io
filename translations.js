@@ -10,7 +10,7 @@ const translations = {
         // Hero Section
         hero_title_1: "Wake your PC",
         hero_title_2: "from anywhere",
-        hero_subtitle: "Turn on your PC remotely for free. Upgrade to Premium for full power management, volume control, and unlimited computers.",
+        hero_subtitle: "Turn on your PC remotely FREE FOREVER. Upgrade to Premium for shutdown, restart, sleep, volume control, unlimited computers, and all 13 themes.",
         hero_btn_appstore: "Download on App Store",
         hero_btn_agent: "Windows Agent",
         hero_note: "Free • No account required • Works on local network",
@@ -142,7 +142,7 @@ const translations = {
         // Hero Section
         hero_title_1: "Включите компьютер",
         hero_title_2: "из любого места",
-        hero_subtitle: "Включайте компьютер удалённо бесплатно. Перейдите на Premium для полного управления питанием, громкостью и неограниченным количеством ПК.",
+        hero_subtitle: "Включайте компьютер удалённо БЕСПЛАТНО НАВСЕГДА. Перейдите на Premium для выключения, перезагрузки, сна, управления громкостью, неограниченного количества ПК и всех 13 тем.",
         hero_btn_appstore: "Загрузить в App Store",
         hero_btn_agent: "Агент для Windows",
         hero_note: "Бесплатно • Без регистрации • Работает в локальной сети",
@@ -274,7 +274,7 @@ const translations = {
         // Hero Section
         hero_title_1: "Увімкніть комп'ютер",
         hero_title_2: "з будь-якого місця",
-        hero_subtitle: "Вмикайте комп'ютер віддалено безкоштовно. Перейдіть на Premium для повного керування живленням, гучністю та необмеженою кількістю ПК.",
+        hero_subtitle: "Вмикайте комп'ютер віддалено БЕЗКОШТОВНО НАЗАВЖДИ. Перейдіть на Premium для вимкнення, перезавантаження, сну, керування гучністю, необмеженої кількості ПК та всіх 13 тем.",
         hero_btn_appstore: "Завантажити в App Store",
         hero_btn_agent: "Агент для Windows",
         hero_note: "Безкоштовно • Без реєстрації • Працює в локальній мережі",
