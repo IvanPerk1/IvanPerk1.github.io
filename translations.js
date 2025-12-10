@@ -28,7 +28,7 @@ const translations = {
         why_private_badge: "vs cloud-based tools that log everything",
         
         why_free_title: "Free to Start",
-        why_free_desc: "Core Wake-on-LAN feature completely free. Premium features like shutdown, volume control, and multiple PCs available at $2.99/month with 3-day free trial.",
+        why_free_desc: "Core Wake-on-LAN feature FREE FOREVER. Upgrade to Premium for shutdown, restart, sleep, volume control, multiple PCs, and all 13 themes at $2.99/month with 3-day free trial.",
         why_free_badge: "vs TeamViewer's mandatory $49/month",
         
         why_simple_title: "Simple & Focused",
@@ -160,7 +160,7 @@ const translations = {
         why_private_badge: "vs облачные инструменты которые всё логируют",
         
         why_free_title: "Бесплатный старт",
-        why_free_desc: "Основная функция Wake-on-LAN полностью бесплатна. Премиум функции вроде выключения, управления громкостью и множественных ПК доступны за $2.99/месяц с 3-дневной пробной версией.",
+        why_free_desc: "Основная функция Wake-on-LAN БЕСПЛАТНА НАВСЕГДА. Перейдите на Premium для выключения, перезагрузки, спящего режима, управления громкостью, множественных ПК и всех 13 тем за $2.99/месяц с 3-дневной пробной версией.",
         why_free_badge: "vs обязательные $49/месяц у TeamViewer",
         
         why_simple_title: "Просто и понятно",
@@ -292,7 +292,7 @@ const translations = {
         why_private_badge: "vs хмарні інструменти які все логують",
         
         why_free_title: "Безкоштовний старт",
-        why_free_desc: "Основна функція Wake-on-LAN повністю безкоштовна. Преміум функції на кшталт вимкнення, керування гучністю та множинних ПК доступні за $2.99/місяць з 3-денною пробною версією.",
+        why_free_desc: "Основна функція Wake-on-LAN БЕЗКОШТОВНА НАЗАВЖДИ. Перейдіть на Premium для вимкнення, перезавантаження, сплячого режиму, керування гучністю, множинних ПК та всіх 13 тем за $2.99/місяць з 3-денною пробною версією.",
         why_free_badge: "vs обов'язкові $49/місяць у TeamViewer",
         
         why_simple_title: "Просто і зрозуміло",
