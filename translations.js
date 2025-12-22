@@ -69,7 +69,7 @@ const translations = {
         feature_lang_desc: "English, Russian, Ukrainian",
         
         feature_secure_title: "Secure",
-        feature_secure_desc: "Token-based authentication",
+        feature_secure_desc: "Direct network connection",
         
         // Pricing Section
         pricing_title: "Simple, transparent pricing",
@@ -86,7 +86,7 @@ const translations = {
         pricing_free_feat2: "1 computer profile",
         pricing_free_feat3: "Ocean theme",
         pricing_free_feat4: "QR code setup",
-        pricing_free_feat5: "Power management",
+        pricing_free_feat5: "Shutdown, Restart, Sleep",
         pricing_free_feat6: "Volume control",
         pricing_free_feat7: "Multiple PCs",
         pricing_free_feat8: "All 13 themes",
@@ -119,7 +119,7 @@ const translations = {
         
         step2_number: "2",
         step2_title: "Install Windows Agent",
-        step2_desc: "Download and run as administrator on your PC",
+        step2_desc: "Download and double-click to install",
         step2_btn: "Download WakeAgent.exe",
         
         step3_number: "3",
@@ -201,7 +201,7 @@ const translations = {
         feature_lang_desc: "Английский, Русский, Украинский",
         
         feature_secure_title: "Безопасность",
-        feature_secure_desc: "Аутентификация на основе токенов",
+        feature_secure_desc: "Прямое подключение в локальной сети",
         
         // Pricing Section
         pricing_title: "Простые и прозрачные цены",
@@ -218,7 +218,7 @@ const translations = {
         pricing_free_feat2: "1 профиль компьютера",
         pricing_free_feat3: "Тема Океан",
         pricing_free_feat4: "Настройка по QR-коду",
-        pricing_free_feat5: "Управление питанием",
+        pricing_free_feat5: "Выключение, Перезагрузка, Сон",
         pricing_free_feat6: "Управление громкостью",
         pricing_free_feat7: "Множественные ПК",
         pricing_free_feat8: "Все 13 тем",
@@ -251,7 +251,7 @@ const translations = {
         
         step2_number: "2",
         step2_title: "Установите агент для Windows",
-        step2_desc: "Скачайте и запустите от имени администратора на вашем ПК",
+        step2_desc: "Скачайте и дважды кликните для установки",
         step2_btn: "Скачать WakeAgent.exe",
         
         step3_number: "3",
@@ -333,7 +333,7 @@ const translations = {
         feature_lang_desc: "Англійська, Російська, Українська",
         
         feature_secure_title: "Безпека",
-        feature_secure_desc: "Аутентифікація на основі токенів",
+        feature_secure_desc: "Пряме підключення в локальній мережі",
         
         // Pricing Section
         pricing_title: "Прості та прозорі ціни",
@@ -350,7 +350,7 @@ const translations = {
         pricing_free_feat2: "1 профіль комп'ютера",
         pricing_free_feat3: "Тема Океан",
         pricing_free_feat4: "Налаштування по QR-коду",
-        pricing_free_feat5: "Керування живленням",
+        pricing_free_feat5: "Вимкнення, Перезавантаження, Сон",
         pricing_free_feat6: "Керування гучністю",
         pricing_free_feat7: "Множинні ПК",
         pricing_free_feat8: "Всі 13 тем",
@@ -383,7 +383,7 @@ const translations = {
         
         step2_number: "2",
         step2_title: "Встановіть агент для Windows",
-        step2_desc: "Завантажте та запустіть від імені адміністратора на вашому ПК",
+        step2_desc: "Завантажте та двічі клацніть для встановлення",
         step2_btn: "Завантажити WakeAgent.exe",
         
         step3_number: "3",
