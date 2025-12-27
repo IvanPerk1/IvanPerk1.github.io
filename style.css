@@ -663,8 +663,14 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    /* ИСПРАВЛЕНО: Скрываем только nav-link, но НЕ language-switcher */
+    .nav-link {
         display: none;
+    }
+    
+    /* Убедимся что переключатель языков видим на мобильных */
+    .language-switcher {
+        display: flex !important;
     }
     
     .hero-container,
