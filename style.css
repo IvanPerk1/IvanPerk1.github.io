@@ -5,9 +5,8 @@
 }
 
 :root {
-    /* Градиент из иконки */
-    --gradient-start: #7DD3FC;  /* Голубой */
-    --gradient-end: #F0ABFC;    /* Розовый */
+    --gradient-start: #7DD3FC;
+    --gradient-end: #F0ABFC;
     --bg-dark: #0f1729;
     --bg-card: #1a2235;
     --text-primary: #ffffff;
@@ -72,6 +71,12 @@ body {
     background-clip: text;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -134,6 +139,10 @@ body {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(125, 211, 252, 0.3);
+}
+
+.btn-nav {
+    white-space: nowrap;
 }
 
 .btn-hero {
@@ -663,14 +672,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* ИСПРАВЛЕНО: Скрываем только nav-link, но НЕ language-switcher */
-    .nav-link {
-        display: none;
+    /* ИСПРАВЛЕНО: Правильная адаптация навигации для мобильных */
+    .nav-right {
+        gap: 12px;
     }
     
-    /* Убедимся что переключатель языков видим на мобильных */
+    .nav-links {
+        display: none; /* Скрываем ссылки на мобильных */
+    }
+    
     .language-switcher {
-        display: flex !important;
+        display: flex !important; /* Переключатель языков всегда видим */
+    }
+    
+    .btn-nav {
+        display: none; /* Кнопка Get Started скрывается на мобильных */
     }
     
     .hero-container,
