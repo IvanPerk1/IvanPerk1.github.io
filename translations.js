@@ -78,7 +78,7 @@ const translations = {
         'unlimited-pcs': 'Unlimited computers',
         'all-themes': 'All 19 beautiful themes',
         'try-free': 'Try 3 Days Free',
-        'trial-note': 'Cancel anytime • $27.99/year option available',
+        'trial-note': 'Cancel anytime • $24.99/year option available',
         
         // Steps
         'design-title': 'Beautiful design, powerful features',
@@ -175,7 +175,7 @@ const translations = {
         'unlimited-pcs': 'Неограниченно компьютеров',
         'all-themes': 'Все 19 красивых тем',
         'try-free': 'Попробовать 3 дня бесплатно',
-        'trial-note': 'Отмена в любое время • Доступен план $27.99/год',
+        'trial-note': 'Отмена в любое время • Доступен план $24.99/год',
         
         // Steps
         'design-title': 'Красивый дизайн, мощные функции',
@@ -272,7 +272,7 @@ const translations = {
         'unlimited-pcs': 'Необмежено комп\'ютерів',
         'all-themes': 'Всі 19 красивих тем',
         'try-free': 'Спробувати 3 дні безкоштовно',
-        'trial-note': 'Скасування в будь-який час • Доступний план $27.99/рік',
+        'trial-note': 'Скасування в будь-який час • Доступний план $24.99/рік',
         
         // Steps
         'design-title': 'Красивий дизайн, потужні функції',
