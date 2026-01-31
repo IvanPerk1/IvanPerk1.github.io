@@ -85,7 +85,7 @@ p {
 
 /* Мобильный переключатель языков - скрыт на десктопе */
 .lang-switcher-mobile {
-    display: none;
+    display: none !important;
 }
 
 .reveal-section.visible {
@@ -650,7 +650,7 @@ footer {
     
     /* Языки в навбаре для мобилки */
     .lang-switcher-mobile {
-        display: flex;
+        display: flex !important;
         margin-left: auto;
         margin-right: 16px;
         background: rgba(255, 255, 255, 0.1);
