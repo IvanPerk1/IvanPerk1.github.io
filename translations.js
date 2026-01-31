@@ -35,8 +35,9 @@ const translations = {
         'updates-desc': 'Agent checks for updates automatically. Always have the latest features and security improvements.',
         'nocloud-title': 'No Cloud Required',
         'nocloud-desc': 'Works completely offline. No internet needed, just your local WiFi. No subscriptions for basic features.',
-        'nocloud-title': 'No Cloud Required',
-        'nocloud-desc': 'Works completely offline. No internet needed, just your local WiFi. No subscriptions for basic features.',
+        
+        // Testimonial
+        'testimonial-quote': '"Works great!"',
         
         // Features
         'features-title': 'Everything you need',
@@ -132,8 +133,9 @@ const translations = {
         'updates-desc': 'Агент автоматически проверяет обновления. Всегда имейте последние функции и улучшения безопасности.',
         'nocloud-title': 'Без облака',
         'nocloud-desc': 'Работает полностью офлайн. Не нужен интернет, только локальный WiFi. Без подписок для базовых функций.',
-        'nocloud-title': 'Без облака',
-        'nocloud-desc': 'Работает полностью офлайн. Не нужен интернет, только локальный WiFi. Без подписок для базовых функций.',
+        
+        // Testimonial
+        'testimonial-quote': '"Работает замечательно!"',
         
         // Features
         'features-title': 'Всё, что вам нужно',
@@ -229,8 +231,9 @@ const translations = {
         'updates-desc': 'Агент автоматично перевіряє оновлення. Завжди майте останні функції та покращення безпеки.',
         'nocloud-title': 'Без хмари',
         'nocloud-desc': 'Працює повністю офлайн. Не потрібен інтернет, лише локальний WiFi. Без підписок для базових функцій.',
-        'nocloud-title': 'Без хмари',
-        'nocloud-desc': 'Працює повністю офлайн. Не потрібен інтернет, лише локальний WiFi. Без підписок для базових функцій.',
+        
+        // Testimonial
+        'testimonial-quote': '"Працює чудово!"',
         
         // Features
         'features-title': 'Все, що вам потрібно',
