@@ -1,398 +1,246 @@
-// Полные переводы для всего сайта
 const translations = {
     en: {
-        // Navigation
-        nav_features: "Features",
-        nav_why: "Why Wake PC?",
-        nav_download: "Download",
-        btn_get_started: "Get Started",
-        
-        // Hero Section
-        hero_title_1: "Wake your PC",
-        hero_title_2: "from anywhere",
-        hero_subtitle: "Turn on your PC remotely FREE FOREVER. Upgrade to Premium for shutdown, restart, sleep, volume control, unlimited computers, and all 13 themes.",
-        hero_btn_appstore: "Download on App Store",
-        hero_btn_agent: "Windows Agent",
-        hero_note: "Free • No account required • Works on local network",
-        
-        // Why Wake PC Section
-        why_title: "Why Wake PC?",
-        why_subtitle: "Unlike TeamViewer, AnyDesk, or Chrome Remote Desktop",
-        
-        why_fast_title: "Lightning Fast",
-        why_fast_desc: "Direct Wake-on-LAN packets. No cloud relay, no lag. Commands execute instantly on your local network.",
-        why_fast_badge: "vs slow remote desktop protocols",
-        
-        why_private_title: "100% Private",
-        why_private_desc: "Everything stays on YOUR network. No data sent to servers. No accounts. No tracking. Your privacy is guaranteed.",
-        why_private_badge: "vs cloud-based tools that log everything",
-        
-        why_free_title: "Free to Start",
-        why_free_desc: "Core Wake-on-LAN feature FREE FOREVER. Upgrade to Premium for shutdown, restart, sleep, volume control, multiple PCs, and all 13 themes at $2.99/month with 3-day free trial.",
-        why_free_badge: "vs TeamViewer's mandatory $49/month",
-        
-        why_simple_title: "Simple & Focused",
-        why_simple_desc: "Does one thing perfectly: power management. No bloat, no complexity, no unnecessary features.",
-        why_simple_badge: "vs bloated 500MB remote desktop apps",
-        
-        why_native_title: "Native iOS Experience",
-        why_native_desc: "Built with SwiftUI. Feels like a true iOS app. 13 beautiful themes, haptic feedback, smooth 60fps animations.",
-        why_native_badge: "vs clunky web-based interfaces",
-        
-        why_battery_title: "Battery Friendly",
-        why_battery_desc: "No background services, no constant polling. Only active when you use it.",
-        why_battery_badge: "vs battery-draining remote desktop apps",
-        
-        // Features Section
-        features_title: "Everything you need",
-        features_subtitle: "Powerful features in a beautiful package",
-        
-        feature_wol_title: "Wake-on-LAN",
-        feature_wol_desc: "Turn on your PC remotely from anywhere in your home",
-        
-        feature_power_title: "Power Management",
-        feature_power_desc: "Shutdown, restart, or sleep with one tap",
-        
-        feature_volume_title: "Volume Control",
-        feature_volume_desc: "Adjust system volume and mute remotely",
-        
-        feature_multi_title: "Multiple PCs",
-        feature_multi_desc: "Manage unlimited computers with custom profiles",
-        
-        feature_themes_title: "13 Beautiful Themes",
-        feature_themes_desc: "Ocean, Fire, Forest, Neon and more",
-        
-        feature_qr_title: "QR Code Setup",
-        feature_qr_desc: "Scan and connect in seconds",
-        
-        feature_lang_title: "Multi-language",
-        feature_lang_desc: "English, Russian, Ukrainian",
-        
-        feature_secure_title: "Secure",
-        feature_secure_desc: "Direct network connection",
-        
-        // Pricing Section
-        pricing_title: "Simple, transparent pricing",
-        pricing_subtitle: "Start free, upgrade when you need more",
-        
-        pricing_free_badge: "FREE",
-        pricing_free_title: "Basic",
-        pricing_free_price: "$0",
-        pricing_free_period: "/forever",
-        pricing_free_desc: "Perfect for single PC users",
-        pricing_free_btn: "Download Free",
-        
-        pricing_free_feat1: "Wake-on-LAN (turn on PC)",
-        pricing_free_feat2: "1 computer profile",
-        pricing_free_feat3: "Ocean theme",
-        pricing_free_feat4: "QR code setup",
-        pricing_free_feat5: "Shutdown, Restart, Sleep",
-        pricing_free_feat6: "Volume control",
-        pricing_free_feat7: "Multiple PCs",
-        pricing_free_feat8: "All 13 themes",
-        
-        pricing_premium_badge: "PREMIUM",
-        pricing_premium_title: "Premium",
-        pricing_premium_price: "$2.99",
-        pricing_premium_period: "/month",
-        pricing_premium_desc: "Full control of all your computers",
-        pricing_premium_btn: "Try 3 Days Free",
-        pricing_premium_note: "Cancel anytime • $24.99/year option available",
-        
-        pricing_premium_feat1: "Everything in Basic",
-        pricing_premium_feat2: "Shutdown, Restart, Sleep",
-        pricing_premium_feat3: "Volume control + mute",
-        pricing_premium_feat4: "Unlimited computers",
-        pricing_premium_feat5: "All 13 beautiful themes",
-        pricing_premium_feat6: "Priority support",
-        pricing_premium_feat7: "Future features included",
-        
-        // Screenshots Section
-        screenshots_title: "Beautiful design, powerful features",
-        
-        // Download Section
-        download_title: "Get started in 3 easy steps",
-        
-        step1_number: "1",
-        step1_title: "Download the app",
-        step1_desc: "Get Wake PC from the App Store",
-        
-        step2_number: "2",
-        step2_title: "Install Windows Agent",
-        step2_desc: "Download and double-click to install",
-        step2_btn: "Download WakeAgent.exe",
-        
-        step3_number: "3",
-        step3_title: "Scan QR & Connect",
-        step3_desc: "Open iPhone Camera, scan the QR code from agent, tap \"Open in Wake PC\"",
-        
-        // Footer
-        footer_copyright: "Wake PC © 2025",
-        footer_privacy: "Privacy Policy",
-        footer_contact: "Contact"
+        'nav-features': 'Features',
+        'nav-why': 'Why Wake PC?',
+        'nav-pricing': 'Pricing',
+        'nav-download': 'Download',
+        'hero-title': 'Wake your PC<br>from anywhere',
+        'hero-subtitle': 'The most reliable and secure way to power on your PC remotely from your iPhone.',
+        'download-ios': 'Download on App Store',
+        'download-agent': 'Windows Agent',
+        'hero-note': 'Free • No account required • Works on local network',
+        'why-title': 'Why Wake PC?',
+        'why-subtitle': 'Unlike TeamViewer, AnyDesk, or Chrome Remote Desktop',
+        'fast-title': 'Lightning Fast',
+        'fast-desc': 'Direct Wake-on-LAN packets. No cloud relay, no lag. Commands execute instantly on your local network.',
+        'private-title': '100% Private',
+        'private-desc': 'Everything stays on YOUR network. No data sent to servers. No accounts. No tracking. Your privacy is guaranteed.',
+        'free-title': 'Free to Start',
+        'free-desc': 'Core Wake-on-LAN feature FREE FOREVER. Upgrade to Premium for more features at $2.99/month with 3-day free trial.',
+        'native-title': 'Native iOS Experience',
+        'native-desc': 'Built with SwiftUI. Feels like a true iOS app. Beautiful themes, haptic feedback, smooth animations.',
+        'features-title': 'Everything you need',
+        'features-subtitle': 'Powerful features in a beautiful package',
+        'wol-title': 'Wake-on-LAN',
+        'wol-desc': 'Turn on your PC remotely from anywhere in your home.',
+        'power-title': 'Power Management',
+        'power-desc': 'Shutdown, restart, or sleep with one tap.',
+        'volume-title': 'Volume Control',
+        'volume-desc': 'Adjust system volume and mute remotely.',
+        'multiple-title': 'Multiple PCs',
+        'multiple-desc': 'Manage unlimited computers with custom profiles.',
+        'themes-title': 'Beautiful Themes',
+        'themes-desc': 'Choose from 13 stunning themes including Neon, Ocean, and Fire.',
+        'qr-title': 'QR Code Setup',
+        'qr-desc': 'Scan and connect in seconds.',
+        'pricing-title': 'Simple, transparent pricing',
+        'pricing-subtitle': 'Start free, upgrade when you need more',
+        'free-plan-title': 'Basic',
+        'forever': '/forever',
+        'free-plan-desc': 'Perfect for single PC users',
+        'wol-feature': 'Wake-on-LAN (turn on PC)',
+        'one-pc-feature': '1 computer profile',
+        'ocean-theme-feature': 'Ocean theme',
+        'qr-setup-feature': 'QR code setup',
+        'download-free': 'Download Free',
+        'most-popular': 'Most Popular',
+        'premium-plan-title': 'Premium',
+        'month': '/month',
+        'premium-plan-desc': 'Full control of all your computers',
+        'everything-basic': 'Everything in Basic',
+        'power-features': 'Shutdown, Restart, Sleep',
+        'volume-features': 'Volume control + mute',
+        'unlimited-pcs': 'Unlimited computers',
+        'all-themes': 'All 13 beautiful themes',
+        'try-free': 'Try 3 Days Free',
+        'trial-note': 'Cancel anytime • $24.99/year option available',
+        'design-title': 'Beautiful design, powerful features',
+        'steps-title': 'Get started in 3 easy steps',
+        'step1-title': 'Download the app',
+        'step1-desc': 'Get Wake PC from the App Store',
+        'step2-title': 'Install Windows Agent',
+        'step2-desc': 'Download and double-click to install. It automatically configures your system.',
+        'download-agent-short': 'Download Agent',
+        'step3-title': 'Scan QR & Connect',
+        'step3-desc': 'Open iPhone Camera, scan the QR code from the agent, and you\'re done!',
+        'privacy': 'Privacy Policy',
+        'terms': 'Terms of Use',
+        'contact': 'Contact'
     },
-    
     ru: {
-        // Navigation
-        nav_features: "Возможности",
-        nav_why: "Почему Wake PC?",
-        nav_download: "Скачать",
-        btn_get_started: "Начать",
-        
-        // Hero Section
-        hero_title_1: "Включите компьютер",
-        hero_title_2: "из любого места",
-        hero_subtitle: "Включайте компьютер удалённо БЕСПЛАТНО НАВСЕГДА. Перейдите на Premium для выключения, перезагрузки, сна, управления громкостью, неограниченного количества ПК и всех 13 тем.",
-        hero_btn_appstore: "Загрузить в App Store",
-        hero_btn_agent: "Агент для Windows",
-        hero_note: "Бесплатно • Без регистрации • Работает в локальной сети",
-        
-        // Why Wake PC Section
-        why_title: "Почему Wake PC?",
-        why_subtitle: "В отличие от TeamViewer, AnyDesk или Chrome Remote Desktop",
-        
-        why_fast_title: "Молниеносная скорость",
-        why_fast_desc: "Прямые Wake-on-LAN пакеты. Без облачных серверов, без задержек. Команды выполняются мгновенно в вашей локальной сети.",
-        why_fast_badge: "vs медленные протоколы удалённого рабочего стола",
-        
-        why_private_title: "100% Приватность",
-        why_private_desc: "Всё остаётся в ВАШЕЙ сети. Никаких данных на серверы. Без аккаунтов. Без отслеживания. Ваша конфиденциальность гарантирована.",
-        why_private_badge: "vs облачные инструменты которые всё логируют",
-        
-        why_free_title: "Бесплатный старт",
-        why_free_desc: "Основная функция Wake-on-LAN БЕСПЛАТНА НАВСЕГДА. Перейдите на Premium для выключения, перезагрузки, спящего режима, управления громкостью, множественных ПК и всех 13 тем за $2.99/месяц с 3-дневной пробной версией.",
-        why_free_badge: "vs обязательные $49/месяц у TeamViewer",
-        
-        why_simple_title: "Просто и понятно",
-        why_simple_desc: "Делает одно дело идеально: управление питанием. Без лишнего, без сложностей, без ненужных функций.",
-        why_simple_badge: "vs раздутые приложения на 500МБ",
-        
-        why_native_title: "Нативный iOS опыт",
-        why_native_desc: "Создано на SwiftUI. Ощущается как настоящее iOS приложение. 13 красивых тем, тактильная отдача, плавная анимация 60fps.",
-        why_native_badge: "vs неуклюжие веб-интерфейсы",
-        
-        why_battery_title: "Бережёт батарею",
-        why_battery_desc: "Без фоновых процессов, без постоянных опросов. Активно только когда вы используете.",
-        why_battery_badge: "vs приложения которые разряжают батарею",
-        
-        // Features Section
-        features_title: "Всё что нужно",
-        features_subtitle: "Мощные функции в красивой упаковке",
-        
-        feature_wol_title: "Wake-on-LAN",
-        feature_wol_desc: "Включите ПК удалённо из любого места в доме",
-        
-        feature_power_title: "Управление питанием",
-        feature_power_desc: "Выключение, перезагрузка или сон одним касанием",
-        
-        feature_volume_title: "Управление громкостью",
-        feature_volume_desc: "Регулируйте системную громкость и отключайте звук удалённо",
-        
-        feature_multi_title: "Множественные ПК",
-        feature_multi_desc: "Управляйте неограниченным количеством компьютеров с персональными профилями",
-        
-        feature_themes_title: "13 красивых тем",
-        feature_themes_desc: "Океан, Огонь, Лес, Неон и другие",
-        
-        feature_qr_title: "Настройка по QR-коду",
-        feature_qr_desc: "Отсканируйте и подключитесь за секунды",
-        
-        feature_lang_title: "Мультиязычность",
-        feature_lang_desc: "Английский, Русский, Украинский",
-        
-        feature_secure_title: "Безопасность",
-        feature_secure_desc: "Прямое подключение в локальной сети",
-        
-        // Pricing Section
-        pricing_title: "Простые и прозрачные цены",
-        pricing_subtitle: "Начните бесплатно, обновитесь когда нужно больше",
-        
-        pricing_free_badge: "БЕСПЛАТНО",
-        pricing_free_title: "Базовый",
-        pricing_free_price: "$0",
-        pricing_free_period: "/навсегда",
-        pricing_free_desc: "Идеально для одного ПК",
-        pricing_free_btn: "Скачать бесплатно",
-        
-        pricing_free_feat1: "Wake-on-LAN (включение ПК)",
-        pricing_free_feat2: "1 профиль компьютера",
-        pricing_free_feat3: "Тема Океан",
-        pricing_free_feat4: "Настройка по QR-коду",
-        pricing_free_feat5: "Выключение, Перезагрузка, Сон",
-        pricing_free_feat6: "Управление громкостью",
-        pricing_free_feat7: "Множественные ПК",
-        pricing_free_feat8: "Все 13 тем",
-        
-        pricing_premium_badge: "ПРЕМИУМ",
-        pricing_premium_title: "Премиум",
-        pricing_premium_price: "$2.99",
-        pricing_premium_period: "/месяц",
-        pricing_premium_desc: "Полный контроль всех ваших компьютеров",
-        pricing_premium_btn: "3 дня бесплатно",
-        pricing_premium_note: "Отмена в любое время • Опция $24.99/год",
-        
-        pricing_premium_feat1: "Всё из Базового",
-        pricing_premium_feat2: "Выключение, Перезагрузка, Сон",
-        pricing_premium_feat3: "Управление громкостью + отключение звука",
-        pricing_premium_feat4: "Неограниченное количество компьютеров",
-        pricing_premium_feat5: "Все 13 красивых тем",
-        pricing_premium_feat6: "Приоритетная поддержка",
-        pricing_premium_feat7: "Будущие функции включены",
-        
-        // Screenshots Section
-        screenshots_title: "Красивый дизайн, мощные функции",
-        
-        // Download Section
-        download_title: "Начните за 3 простых шага",
-        
-        step1_number: "1",
-        step1_title: "Скачайте приложение",
-        step1_desc: "Получите Wake PC из App Store",
-        
-        step2_number: "2",
-        step2_title: "Установите агент для Windows",
-        step2_desc: "Скачайте и дважды кликните для установки",
-        step2_btn: "Скачать WakeAgent.exe",
-        
-        step3_number: "3",
-        step3_title: "Отсканируйте QR и подключитесь",
-        step3_desc: "Откройте Камеру iPhone, отсканируйте QR-код из агента, нажмите \"Открыть в Wake PC\"",
-        
-        // Footer
-        footer_copyright: "Wake PC © 2025",
-        footer_privacy: "Политика конфиденциальности",
-        footer_contact: "Контакты"
+        'nav-features': 'Функции',
+        'nav-why': 'Почему мы?',
+        'nav-pricing': 'Цены',
+        'nav-download': 'Скачать',
+        'hero-title': 'Включай ПК<br>откуда угодно',
+        'hero-subtitle': 'Самый надежный и безопасный способ удаленно включить компьютер с iPhone.',
+        'download-ios': 'Скачать в App Store',
+        'download-agent': 'Агент для Windows',
+        'hero-note': 'Бесплатно • Без регистрации • Работает в локальной сети',
+        'why-title': 'Почему Wake PC?',
+        'why-subtitle': 'В отличие от TeamViewer, AnyDesk или Chrome Remote Desktop',
+        'fast-title': 'Молниеносно быстро',
+        'fast-desc': 'Прямые Wake-on-LAN пакеты. Без облаков и задержек. Команды выполняются мгновенно в вашей локальной сети.',
+        'private-title': '100% Приватно',
+        'private-desc': 'Всё остается в ВАШЕЙ сети. Никаких данных на сервера. Без аккаунтов. Ваша приватность гарантирована.',
+        'free-title': 'Бесплатный старт',
+        'free-desc': 'Базовая функция Wake-on-LAN БЕСПЛАТНА НАВСЕГДА. Premium за $2.99/мес с 3-дневным пробным периодом.',
+        'native-title': 'Нативный iOS опыт',
+        'native-desc': 'Создано на SwiftUI. Ощущается как родное приложение iOS. Красивые темы, тактильный отклик, плавные анимации.',
+        'features-title': 'Всё, что вам нужно',
+        'features-subtitle': 'Мощные функции в красивой упаковке',
+        'wol-title': 'Wake-on-LAN',
+        'wol-desc': 'Включайте ваш ПК удаленно из любой точки дома.',
+        'power-title': 'Управление питанием',
+        'power-desc': 'Выключение, перезагрузка или сон одним касанием.',
+        'volume-title': 'Управление громкостью',
+        'volume-desc': 'Регулируйте громкость системы и отключайте звук удаленно.',
+        'multiple-title': 'Несколько ПК',
+        'multiple-desc': 'Управляйте неограниченным количеством компьютеров.',
+        'themes-title': 'Красивые темы',
+        'themes-desc': 'Выберите из 13 потрясающих тем, включая Неон, Океан и Огонь.',
+        'qr-title': 'Настройка по QR-коду',
+        'qr-desc': 'Сканируйте и подключайтесь за секунды.',
+        'pricing-title': 'Простые, прозрачные цены',
+        'pricing-subtitle': 'Начните бесплатно, обновитесь при необходимости',
+        'free-plan-title': 'Базовый',
+        'forever': '/навсегда',
+        'free-plan-desc': 'Идеально для одного ПК',
+        'wol-feature': 'Wake-on-LAN (включение ПК)',
+        'one-pc-feature': '1 профиль компьютера',
+        'ocean-theme-feature': 'Тема Океан',
+        'qr-setup-feature': 'Настройка по QR-коду',
+        'download-free': 'Скачать бесплатно',
+        'most-popular': 'Популярный',
+        'premium-plan-title': 'Премиум',
+        'month': '/месяц',
+        'premium-plan-desc': 'Полный контроль над всеми компьютерами',
+        'everything-basic': 'Всё из Базового',
+        'power-features': 'Выключение, Перезагрузка, Сон',
+        'volume-features': 'Управление громкостью + звук',
+        'unlimited-pcs': 'Неограниченно компьютеров',
+        'all-themes': 'Все 13 красивых тем',
+        'try-free': 'Попробовать 3 дня бесплатно',
+        'trial-note': 'Отмена в любое время • Доступен план $24.99/год',
+        'design-title': 'Красивый дизайн, мощные функции',
+        'steps-title': 'Начните за 3 простых шага',
+        'step1-title': 'Скачайте приложение',
+        'step1-desc': 'Загрузите Wake PC из App Store',
+        'step2-title': 'Установите Windows Агент',
+        'step2-desc': 'Скачайте и запустите установку. Он автоматически настроит вашу систему.',
+        'download-agent-short': 'Скачать Агент',
+        'step3-title': 'Сканируйте QR и готово',
+        'step3-desc': 'Откройте камеру iPhone, отсканируйте QR-код из агента, и всё готово!',
+        'privacy': 'Политика конфиденциальности',
+        'terms': 'Условия использования',
+        'contact': 'Контакты'
     },
-    
     uk: {
-        // Navigation
-        nav_features: "Можливості",
-        nav_why: "Чому Wake PC?",
-        nav_download: "Завантажити",
-        btn_get_started: "Почати",
-        
-        // Hero Section
-        hero_title_1: "Увімкніть комп'ютер",
-        hero_title_2: "з будь-якого місця",
-        hero_subtitle: "Вмикайте комп'ютер віддалено БЕЗКОШТОВНО НАЗАВЖДИ. Перейдіть на Premium для вимкнення, перезавантаження, сну, керування гучністю, необмеженої кількості ПК та всіх 13 тем.",
-        hero_btn_appstore: "Завантажити в App Store",
-        hero_btn_agent: "Агент для Windows",
-        hero_note: "Безкоштовно • Без реєстрації • Працює в локальній мережі",
-        
-        // Why Wake PC Section
-        why_title: "Чому Wake PC?",
-        why_subtitle: "На відміну від TeamViewer, AnyDesk або Chrome Remote Desktop",
-        
-        why_fast_title: "Блискавична швидкість",
-        why_fast_desc: "Прямі Wake-on-LAN пакети. Без хмарних серверів, без затримок. Команди виконуються миттєво у вашій локальній мережі.",
-        why_fast_badge: "vs повільні протоколи віддаленого робочого столу",
-        
-        why_private_title: "100% Приватність",
-        why_private_desc: "Все залишається у ВАШІЙ мережі. Жодних даних на сервери. Без акаунтів. Без відстеження. Ваша конфіденційність гарантована.",
-        why_private_badge: "vs хмарні інструменти які все логують",
-        
-        why_free_title: "Безкоштовний старт",
-        why_free_desc: "Основна функція Wake-on-LAN БЕЗКОШТОВНА НАЗАВЖДИ. Перейдіть на Premium для вимкнення, перезавантаження, сплячого режиму, керування гучністю, множинних ПК та всіх 13 тем за $2.99/місяць з 3-денною пробною версією.",
-        why_free_badge: "vs обов'язкові $49/місяць у TeamViewer",
-        
-        why_simple_title: "Просто і зрозуміло",
-        why_simple_desc: "Робить одну справу ідеально: керування живленням. Без зайвого, без складнощів, без непотрібних функцій.",
-        why_simple_badge: "vs роздуті додатки на 500МБ",
-        
-        why_native_title: "Нативний iOS досвід",
-        why_native_desc: "Створено на SwiftUI. Відчувається як справжній iOS додаток. 13 красивих тем, тактильний відгук, плавна анімація 60fps.",
-        why_native_badge: "vs незграбні веб-інтерфейси",
-        
-        why_battery_title: "Береже батарею",
-        why_battery_desc: "Без фонових процесів, без постійних опитувань. Активний лише коли ви використовуєте.",
-        why_battery_badge: "vs додатки які розряджають батарею",
-        
-        // Features Section
-        features_title: "Все що потрібно",
-        features_subtitle: "Потужні функції в красивій упаковці",
-        
-        feature_wol_title: "Wake-on-LAN",
-        feature_wol_desc: "Увімкніть ПК віддалено з будь-якого місця в будинку",
-        
-        feature_power_title: "Керування живленням",
-        feature_power_desc: "Вимкнення, перезавантаження або сон одним дотиком",
-        
-        feature_volume_title: "Керування гучністю",
-        feature_volume_desc: "Регулюйте системну гучність та вимикайте звук віддалено",
-        
-        feature_multi_title: "Множинні ПК",
-        feature_multi_desc: "Керуйте необмеженою кількістю комп'ютерів з персональними профілями",
-        
-        feature_themes_title: "13 красивих тем",
-        feature_themes_desc: "Океан, Вогонь, Ліс, Неон та інші",
-        
-        feature_qr_title: "Налаштування по QR-коду",
-        feature_qr_desc: "Скануйте та підключайтесь за секунди",
-        
-        feature_lang_title: "Мультимовність",
-        feature_lang_desc: "Англійська, Російська, Українська",
-        
-        feature_secure_title: "Безпека",
-        feature_secure_desc: "Пряме підключення в локальній мережі",
-        
-        // Pricing Section
-        pricing_title: "Прості та прозорі ціни",
-        pricing_subtitle: "Почніть безкоштовно, оновіться коли потрібно більше",
-        
-        pricing_free_badge: "БЕЗКОШТОВНО",
-        pricing_free_title: "Базовий",
-        pricing_free_price: "$0",
-        pricing_free_period: "/назавжди",
-        pricing_free_desc: "Ідеально для одного ПК",
-        pricing_free_btn: "Завантажити безкоштовно",
-        
-        pricing_free_feat1: "Wake-on-LAN (увімкнення ПК)",
-        pricing_free_feat2: "1 профіль комп'ютера",
-        pricing_free_feat3: "Тема Океан",
-        pricing_free_feat4: "Налаштування по QR-коду",
-        pricing_free_feat5: "Вимкнення, Перезавантаження, Сон",
-        pricing_free_feat6: "Керування гучністю",
-        pricing_free_feat7: "Множинні ПК",
-        pricing_free_feat8: "Всі 13 тем",
-        
-        pricing_premium_badge: "ПРЕМІУМ",
-        pricing_premium_title: "Преміум",
-        pricing_premium_price: "$2.99",
-        pricing_premium_period: "/місяць",
-        pricing_premium_desc: "Повний контроль всіх ваших комп'ютерів",
-        pricing_premium_btn: "3 дні безкоштовно",
-        pricing_premium_note: "Скасування в будь-який час • Опція $24.99/рік",
-        
-        pricing_premium_feat1: "Все з Базового",
-        pricing_premium_feat2: "Вимкнення, Перезавантаження, Сон",
-        pricing_premium_feat3: "Керування гучністю + вимкнення звуку",
-        pricing_premium_feat4: "Необмежена кількість комп'ютерів",
-        pricing_premium_feat5: "Всі 13 красивих тем",
-        pricing_premium_feat6: "Пріоритетна підтримка",
-        pricing_premium_feat7: "Майбутні функції включені",
-        
-        // Screenshots Section
-        screenshots_title: "Красивий дизайн, потужні функції",
-        
-        // Download Section
-        download_title: "Почніть за 3 прості кроки",
-        
-        step1_number: "1",
-        step1_title: "Завантажте додаток",
-        step1_desc: "Отримайте Wake PC з App Store",
-        
-        step2_number: "2",
-        step2_title: "Встановіть агент для Windows",
-        step2_desc: "Завантажте та двічі клацніть для встановлення",
-        step2_btn: "Завантажити WakeAgent.exe",
-        
-        step3_number: "3",
-        step3_title: "Скануйте QR та підключайтесь",
-        step3_desc: "Відкрийте Камеру iPhone, скануйте QR-код з агента, натисніть \"Відкрити в Wake PC\"",
-        
-        // Footer
-        footer_copyright: "Wake PC © 2025",
-        footer_privacy: "Політика конфіденційності",
-        footer_contact: "Контакти"
+        'nav-features': 'Функції',
+        'nav-why': 'Чому ми?',
+        'nav-pricing': 'Ціни',
+        'nav-download': 'Завантажити',
+        'hero-title': 'Вмикай ПК<br>звідусіль',
+        'hero-subtitle': 'Найнадійніший та безпечний спосіб віддалено увімкнути комп\'ютер з iPhone.',
+        'download-ios': 'Завантажити в App Store',
+        'download-agent': 'Агент для Windows',
+        'hero-note': 'Безкоштовно • Без реєстрації • Працює в локальній мережі',
+        'why-title': 'Чому Wake PC?',
+        'why-subtitle': 'На відміну від TeamViewer, AnyDesk або Chrome Remote Desktop',
+        'fast-title': 'Блискавично швидко',
+        'fast-desc': 'Прямі Wake-on-LAN пакети. Без хмар та затримок. Команди виконуються миттєво у вашій локальній мережі.',
+        'private-title': '100% Приватно',
+        'private-desc': 'Все залишається у ВАШІЙ мережі. Ніяких даних на сервери. Без акаунтів. Ваша приватність гарантована.',
+        'free-title': 'Безкоштовний старт',
+        'free-desc': 'Базова функція Wake-on-LAN БЕЗКОШТОВНА НАЗАВЖДИ. Premium за $2.99/міс з 3-денним пробним періодом.',
+        'native-title': 'Нативний iOS досвід',
+        'native-desc': 'Створено на SwiftUI. Відчувається як рідний додаток iOS. Красиві теми, тактильний відгук, плавні анімації.',
+        'features-title': 'Все, що вам потрібно',
+        'features-subtitle': 'Потужні функції в красивій упаковці',
+        'wol-title': 'Wake-on-LAN',
+        'wol-desc': 'Вмикайте ваш ПК віддалено з будь-якої точки дому.',
+        'power-title': 'Управління живленням',
+        'power-desc': 'Вимкнення, перезавантаження або сон одним дотиком.',
+        'volume-title': 'Управління гучністю',
+        'volume-desc': 'Регулюйте гучність системи та вимикайте звук віддалено.',
+        'multiple-title': 'Декілька ПК',
+        'multiple-desc': 'Керуйте необмеженою кількістю комп\'ютерів.',
+        'themes-title': 'Красиві теми',
+        'themes-desc': 'Оберіть з 13 приголомшливих тем, включаючи Неон, Океан та Вогонь.',
+        'qr-title': 'Налаштування за QR-кодом',
+        'qr-desc': 'Скануйте та підключайтеся за секунди.',
+        'pricing-title': 'Прості, прозорі ціни',
+        'pricing-subtitle': 'Почніть безкоштовно, оновіться за потреби',
+        'free-plan-title': 'Базовий',
+        'forever': '/назавжди',
+        'free-plan-desc': 'Ідеально для одного ПК',
+        'wol-feature': 'Wake-on-LAN (увімкнення ПК)',
+        'one-pc-feature': '1 профіль комп\'ютера',
+        'ocean-theme-feature': 'Тема Океан',
+        'qr-setup-feature': 'Налаштування за QR-кодом',
+        'download-free': 'Завантажити безкоштовно',
+        'most-popular': 'Популярний',
+        'premium-plan-title': 'Преміум',
+        'month': '/місяць',
+        'premium-plan-desc': 'Повний контроль над усіма комп\'ютерами',
+        'everything-basic': 'Все з Базового',
+        'power-features': 'Вимкнення, Перезавантаження, Сон',
+        'volume-features': 'Управління гучністю + звук',
+        'unlimited-pcs': 'Необмежено комп\'ютерів',
+        'all-themes': 'Всі 13 красивих тем',
+        'try-free': 'Спробувати 3 дні безкоштовно',
+        'trial-note': 'Скасування в будь-який час • Доступний план $24.99/рік',
+        'design-title': 'Красивий дизайн, потужні функції',
+        'steps-title': 'Почніть за 3 прості кроки',
+        'step1-title': 'Завантажте додаток',
+        'step1-desc': 'Отримайте Wake PC з App Store',
+        'step2-title': 'Встановіть Windows Агент',
+        'step2-desc': 'Завантажте та запустіть інсталяцію. Він автоматично налаштує вашу систему.',
+        'download-agent-short': 'Завантажити Агент',
+        'step3-title': 'Скануйте QR та готово',
+        'step3-desc': 'Відкрийте камеру iPhone, відскануйте QR-код з агента, і все готово!',
+        'privacy': 'Політика конфіденційності',
+        'terms': 'Умови використання',
+        'contact': 'Контакти'
     }
 };
+
+function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            // Если внутри элемента есть другие теги (например, <br> в заголовке)
+            if (element.children.length > 0 && key === 'hero-title') {
+                 element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
+            }
+        }
+    });
+
+    // Обновляем активную кнопку в переключателе
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    // Сохраняем выбор языка (опционально, можно использовать localStorage)
+    // localStorage.setItem('preferredLanguage', lang);
+}
+
+// Инициализация языка при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    // Можно определить язык браузера или использовать сохраненный
+    // const savedLang = localStorage.getItem('preferredLanguage');
+    // const userLang = savedLang || navigator.language.slice(0, 2) || 'en';
+    
+    // По умолчанию используем английский, если язык не поддерживается
+    let initialLang = 'en';
+    // if (translations[userLang]) {
+    //     initialLang = userLang;
+    // }
+
+    setLanguage(initialLang);
+});
