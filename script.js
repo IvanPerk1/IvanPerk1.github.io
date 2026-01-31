@@ -1,103 +1,84 @@
-// Получаем сохраненный язык или используем английский
-let currentLang = localStorage.getItem('language') || 'en';
-
-// Функция смены языка
-function changeLanguage(lang) {
-    currentLang = lang;
-    localStorage.setItem('language', lang);
-    
-    // Обновляем кнопки языков
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.dataset.lang === lang) {
-            btn.classList.add('active');
-        }
-    });
-    
-    // Обновляем переводы
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.dataset.translate;
-        if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
-}
-
-// Инициализация языковых кнопок
 document.addEventListener('DOMContentLoaded', () => {
-    // Применяем сохраненный язык
-    changeLanguage(currentLang);
-    
-    // Добавляем обработчики для кнопок языков
-    document.querySelectorAll('.lang-btn').forEach(btn => {
+    // --- Анимация появления секций при скролле ---
+    const observerOptions = {
+        threshold: 0.15, // Секция считается видимой, когда показано 15%
+        rootMargin: '0px 0px -50px 0px' // Немного смещаем точку срабатывания вверх
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Можно прекратить наблюдение после появления, если не нужна анимация исчезновения
+                // sectionObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-section').forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    // --- Изменение навбара при скролле ---
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // --- Мобильное меню ---
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinksContainer = document.querySelector('.nav-links-container');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('active');
+    });
+
+    // Закрываем меню при клике на ссылку
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinksContainer.classList.remove('active');
+        });
+    });
+
+    // --- Переключение языков (Логика отображения) ---
+    // Основная логика переводов находится в translations.js,
+    // здесь мы только управляем визуальным состоянием кнопок.
+    const langBtns = document.querySelectorAll('.lang-btn');
+    langBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            changeLanguage(btn.dataset.lang);
+            // Убираем активный класс у всех кнопок
+            langBtns.forEach(b => b.classList.remove('active'));
+            // Добавляем активный класс нажатой кнопке
+            btn.classList.add('active');
+            
+            // Вызываем функцию смены языка из translations.js
+            const lang = btn.getAttribute('data-lang');
+            if (typeof setLanguage === 'function') {
+                setLanguage(lang);
+            }
+        });
+    });
+
+    // Плавный скролл для якорей (для старых браузеров, хотя CSS scroll-behavior обычно справляется)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const navHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
-
-// Плавная прокрутка при клике на ссылки
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Анимация появления элементов при скролле
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Применяем анимацию к карточкам
-document.querySelectorAll('.comparison-card, .feature-card, .step').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Эффект параллакса для hero секции
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero-phone');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-});
-
-// Показываем/скрываем навигацию при скролле
-let lastScroll = 0;
-const nav = document.querySelector('.nav');
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-        nav.style.transform = 'translateY(0)';
-    } else if (currentScroll > lastScroll && currentScroll > 100) {
-        nav.style.transform = 'translateY(-100%)';
-    } else {
-        nav.style.transform = 'translateY(0)';
-    }
-    
-    lastScroll = currentScroll;
-});
-
-nav.style.transition = 'transform 0.3s ease';
