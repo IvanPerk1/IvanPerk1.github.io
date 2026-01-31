@@ -88,6 +88,86 @@ p {
     transform: translateY(0);
 }
 
+/* Apple-style staggered animations */
+.feature-card,
+.bento-item,
+.step-card,
+.pricing-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-section.visible .feature-card,
+.reveal-section.visible .bento-item,
+.reveal-section.visible .step-card,
+.reveal-section.visible .pricing-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delay for cards */
+.reveal-section.visible .feature-card:nth-child(1),
+.reveal-section.visible .step-card:nth-child(1),
+.reveal-section.visible .pricing-card:nth-child(1) { transition-delay: 0.1s; }
+.reveal-section.visible .feature-card:nth-child(2),
+.reveal-section.visible .step-card:nth-child(2),
+.reveal-section.visible .pricing-card:nth-child(2) { transition-delay: 0.2s; }
+.reveal-section.visible .feature-card:nth-child(3),
+.reveal-section.visible .step-card:nth-child(3) { transition-delay: 0.3s; }
+.reveal-section.visible .feature-card:nth-child(4) { transition-delay: 0.4s; }
+.reveal-section.visible .feature-card:nth-child(5) { transition-delay: 0.5s; }
+.reveal-section.visible .feature-card:nth-child(6) { transition-delay: 0.6s; }
+.reveal-section.visible .feature-card:nth-child(7) { transition-delay: 0.7s; }
+.reveal-section.visible .feature-card:nth-child(8) { transition-delay: 0.8s; }
+.reveal-section.visible .feature-card:nth-child(9) { transition-delay: 0.9s; }
+
+/* Apple-style text reveal */
+.reveal-section h2,
+.reveal-section .section-subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-section.visible h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.reveal-section.visible .section-subtitle {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.15s;
+}
+
+/* Update card animation */
+.update-card {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-section.visible .update-card {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Screenshot slider animation */
+.screenshot-item {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-section.visible .screenshot-item:nth-child(1) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.1s; }
+.reveal-section.visible .screenshot-item:nth-child(2) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.2s; }
+.reveal-section.visible .screenshot-item:nth-child(3) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.3s; }
+.reveal-section.visible .screenshot-item:nth-child(4) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.4s; }
+.reveal-section.visible .screenshot-item:nth-child(5) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.5s; }
+
 /* Навигация */
 .navbar {
     position: fixed;
