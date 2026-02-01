@@ -160,18 +160,20 @@ p {
     transform: scale(1) translateY(0);
 }
 
-/* Screenshot slider animation */
+/* Screenshot grid animation */
 .screenshot-item {
     opacity: 0;
-    transform: translateY(30px) scale(0.95);
+    transform: translateY(40px) scale(0.95);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .reveal-section.visible .screenshot-item:nth-child(1) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.1s; }
 .reveal-section.visible .screenshot-item:nth-child(2) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.2s; }
-.reveal-section.visible .screenshot-item:nth-child(3) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.3s; }
-.reveal-section.visible .screenshot-item:nth-child(4) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.4s; }
-.reveal-section.visible .screenshot-item:nth-child(5) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.5s; }
+.reveal-section.visible .screenshot-item:nth-child(3) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.25s; }
+.reveal-section.visible .screenshot-item:nth-child(4) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.3s; }
+.reveal-section.visible .screenshot-item:nth-child(5) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.4s; }
+.reveal-section.visible .screenshot-item:nth-child(6) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.45s; }
+.reveal-section.visible .screenshot-item:nth-child(7) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.5s; }
 
 /* Навигация */
 .navbar {
@@ -478,37 +480,25 @@ section {
     margin-bottom: 0;
 }
 
-/* Скриншоты */
-.screenshots-slider-container {
-    overflow-x: auto;
+/* Скриншоты - Сетка */
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     padding: 40px 0;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}
-
-.screenshots-slider-container::-webkit-scrollbar {
-    display: none;
-}
-
-.screenshots-slider {
-    display: flex;
-    gap: 20px;
-    padding: 0 24px;
-    width: max-content;
-    margin: 0 auto;
 }
 
 .screenshot-item {
-    flex: 0 0 auto;
-    width: 220px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
 }
 
 .screenshot-item:hover {
-    transform: scale(1.03);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .screenshot-item img {
@@ -517,13 +507,46 @@ section {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .screenshot-item {
-        width: 180px;
+/* Центрируем последний ряд (3 элемента) */
+.screenshots-grid .screenshot-item:nth-child(5) {
+    grid-column: 1;
+}
+
+.screenshots-grid .screenshot-item:nth-child(6) {
+    grid-column: 2;
+}
+
+.screenshots-grid .screenshot-item:nth-child(7) {
+    grid-column: 3;
+}
+
+@media (max-width: 1024px) {
+    .screenshots-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
     
-    .screenshots-slider {
+    .screenshots-grid .screenshot-item:nth-child(5),
+    .screenshots-grid .screenshot-item:nth-child(6),
+    .screenshots-grid .screenshot-item:nth-child(7) {
+        grid-column: auto;
+    }
+    
+    .screenshots-grid .screenshot-item:nth-child(7) {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
+    }
+    
+    .screenshots-grid .screenshot-item:nth-child(7) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
 
