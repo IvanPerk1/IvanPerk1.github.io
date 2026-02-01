@@ -17,56 +17,75 @@
             color: #e0e0e0;
             background: #0a0a0a;
             min-height: 100vh;
+            padding: 40px 20px;
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 60px 20px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: #888;
+            font-size: 0.95em;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: #fff;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.02) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 24px;
+            padding: 48px;
         }
         
         h1 {
             color: #fff;
-            margin-bottom: 10px;
-            font-size: 2.5em;
+            margin-bottom: 8px;
+            font-size: 2.2em;
             font-weight: 700;
         }
         
         .date {
             color: #888;
             font-size: 0.95em;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
         
         h2 {
             color: #fff;
-            margin-top: 40px;
-            margin-bottom: 16px;
-            font-size: 1.4em;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            font-size: 1.3em;
             font-weight: 600;
         }
         
         h3 {
             color: #ccc;
-            margin-top: 24px;
-            margin-bottom: 12px;
-            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.05em;
             font-weight: 600;
         }
         
         p {
-            margin-bottom: 16px;
-            color: #b0b0b0;
+            margin-bottom: 14px;
+            color: #a0a0a0;
         }
         
         ul {
-            margin-left: 24px;
-            margin-bottom: 16px;
+            margin-left: 20px;
+            margin-bottom: 14px;
         }
         
         li {
-            margin-bottom: 10px;
-            color: #b0b0b0;
+            margin-bottom: 8px;
+            color: #a0a0a0;
         }
         
         strong {
@@ -76,16 +95,15 @@
         
         hr {
             border: none;
-            border-top: 1px solid #222;
-            margin: 40px 0;
+            border-top: 1px solid rgba(34, 197, 94, 0.15);
+            margin: 36px 0;
         }
         
         .contact {
-            background: #111;
+            background: rgba(0, 0, 0, 0.3);
             padding: 24px;
             border-radius: 16px;
-            margin-top: 40px;
-            border: 1px solid #222;
+            margin-top: 36px;
         }
         
         .contact h2 {
@@ -93,23 +111,12 @@
         }
         
         a {
-            color: #60a5fa;
+            color: #4ade80;
             text-decoration: none;
         }
         
         a:hover {
             text-decoration: underline;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #888;
-            font-size: 0.95em;
-        }
-        
-        .back-link:hover {
-            color: #fff;
         }
         
         .footer-note {
@@ -118,83 +125,95 @@
             font-size: 0.9em;
             font-style: italic;
         }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 28px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-link">← Back to Wake PC</a>
         
-        <h1>Privacy Policy</h1>
-        <p class="date">Last Updated: January 9, 2026</p>
+        <div class="card">
+            <h1>Privacy Policy</h1>
+            <p class="date">Last Updated: January 9, 2026</p>
 
-        <h2>Introduction</h2>
-        <p>Wake PC is an application for controlling your computer over local network. We take your privacy seriously and strive to be completely transparent about data collection and usage.</p>
+            <h2>Introduction</h2>
+            <p>Wake PC is an application for controlling your computer over local network. We take your privacy seriously and strive to be completely transparent about data collection and usage.</p>
 
-        <h2>What Data We Collect</h2>
-        <p><strong>We DO NOT collect any personal data.</strong></p>
-        <p>Wake PC operates exclusively on your local network and does not send any information to external servers.</p>
+            <h2>What Data We Collect</h2>
+            <p><strong>We DO NOT collect any personal data.</strong></p>
+            <p>Wake PC operates exclusively on your local network and does not send any information to external servers.</p>
 
-        <h3>Data that stays on your device:</h3>
-        <ul>
-            <li><strong>Connection settings</strong> — MAC address, IP address, ports, and security token of your computer</li>
-            <li><strong>Computer profiles</strong> — Names and emojis you assign to your computers</li>
-            <li><strong>App settings</strong> — Selected theme</li>
-        </ul>
-        <p>All this data is stored <strong>locally on your iPhone</strong> and never leaves your device.</p>
+            <h3>Data that stays on your device:</h3>
+            <ul>
+                <li><strong>Connection settings</strong> — MAC address, IP address, ports, and security token of your computer</li>
+                <li><strong>Computer profiles</strong> — Names and emojis you assign to your computers</li>
+                <li><strong>App settings</strong> — Selected theme</li>
+            </ul>
+            <p>All this data is stored <strong>locally on your iPhone</strong> and never leaves your device.</p>
 
-        <h2>App Permissions</h2>
-        <h3>Local Network Access</h3>
-        <p>The app requests permission to use local network for:</p>
-        <ul>
-            <li><strong>Wake-on-LAN</strong> — Sending "magic packet" to turn on your computer</li>
-            <li><strong>Agent API</strong> — Power management (shutdown, reboot, sleep) and volume control</li>
-        </ul>
-        <p><strong>Important:</strong> Data is transmitted only within your local network (e.g., home Wi-Fi). No data is sent to the internet or external servers.</p>
+            <h2>App Permissions</h2>
+            <h3>Local Network Access</h3>
+            <p>The app requests permission to use local network for:</p>
+            <ul>
+                <li><strong>Wake-on-LAN</strong> — Sending "magic packet" to turn on your computer</li>
+                <li><strong>Agent API</strong> — Power management (shutdown, reboot, sleep) and volume control</li>
+            </ul>
+            <p><strong>Important:</strong> Data is transmitted only within your local network (e.g., home Wi-Fi). No data is sent to the internet or external servers.</p>
 
-        <h2>How We Use Data</h2>
-        <ul>
-            <li><strong>Local storage</strong> — All settings are stored on your iPhone using standard UserDefaults mechanism</li>
-            <li><strong>Local transmission</strong> — Commands are sent directly to your computer on local network</li>
-            <li><strong>No analytics</strong> — We don't use any analytics or tracking services</li>
-        </ul>
+            <h2>How We Use Data</h2>
+            <ul>
+                <li><strong>Local storage</strong> — All settings are stored on your iPhone using standard UserDefaults mechanism</li>
+                <li><strong>Local transmission</strong> — Commands are sent directly to your computer on local network</li>
+                <li><strong>No analytics</strong> — We don't use any analytics or tracking services</li>
+            </ul>
 
-        <h2>Third-Party Data Sharing</h2>
-        <p><strong>We DO NOT share any data with third parties</strong> because we don't collect any data at all.</p>
-        <p>The app does not contain:</p>
-        <ul>
-            <li>Advertising</li>
-            <li>Analytics</li>
-            <li>Trackers</li>
-            <li>Social media integration</li>
-            <li>Cloud synchronization</li>
-        </ul>
+            <h2>Third-Party Data Sharing</h2>
+            <p><strong>We DO NOT share any data with third parties</strong> because we don't collect any data at all.</p>
+            <p>The app does not contain:</p>
+            <ul>
+                <li>Advertising</li>
+                <li>Analytics</li>
+                <li>Trackers</li>
+                <li>Social media integration</li>
+                <li>Cloud synchronization</li>
+            </ul>
 
-        <h2>Security</h2>
-        <p>Your data is protected:</p>
-        <ul>
-            <li><strong>Local storage</strong> — Data is stored in iOS app sandbox</li>
-            <li><strong>Encryption</strong> — Data is protected by standard iOS encryption</li>
-            <li><strong>Security token</strong> — Agent on computer uses token to authenticate requests</li>
-        </ul>
+            <h2>Security</h2>
+            <p>Your data is protected:</p>
+            <ul>
+                <li><strong>Local storage</strong> — Data is stored in iOS app sandbox</li>
+                <li><strong>Encryption</strong> — Data is protected by standard iOS encryption</li>
+                <li><strong>Security token</strong> — Agent on computer uses token to authenticate requests</li>
+            </ul>
 
-        <h2>Your Rights</h2>
-        <p>You have full control over your data:</p>
-        <ul>
-            <li><strong>Data deletion</strong> — Delete the app to completely remove all data</li>
-            <li><strong>Data modification</strong> — You can change or delete computer profiles at any time</li>
-        </ul>
+            <h2>Your Rights</h2>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li><strong>Data deletion</strong> — Delete the app to completely remove all data</li>
+                <li><strong>Data modification</strong> — You can change or delete computer profiles at any time</li>
+            </ul>
 
-        <h2>Privacy Policy Changes</h2>
-        <p>We may update this privacy policy. We will notify you of any changes through App Store app update.</p>
+            <h2>Privacy Policy Changes</h2>
+            <p>We may update this privacy policy. We will notify you of any changes through App Store app update.</p>
 
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>If you have questions about privacy, contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:i.perk1@icloud.com">i.perk1@icloud.com</a></p>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>If you have questions about privacy, contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:i.perk1@icloud.com">i.perk1@icloud.com</a></p>
+            </div>
+
+            <hr>
+            <p class="footer-note">This privacy policy is effective for Wake PC app version 1.0 and above.</p>
         </div>
-
-        <hr>
-        <p class="footer-note">This privacy policy is effective for Wake PC app version 1.0 and above.</p>
     </div>
 </body>
 </html>
