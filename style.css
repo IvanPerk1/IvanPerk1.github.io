@@ -120,7 +120,8 @@ p {
 .reveal-section.visible .step-card:nth-child(2),
 .reveal-section.visible .pricing-card:nth-child(2) { transition-delay: 0.2s; }
 .reveal-section.visible .feature-card:nth-child(3),
-.reveal-section.visible .step-card:nth-child(3) { transition-delay: 0.3s; }
+.reveal-section.visible .step-card:nth-child(3),
+.reveal-section.visible .pricing-card:nth-child(3) { transition-delay: 0.3s; }
 .reveal-section.visible .feature-card:nth-child(4) { transition-delay: 0.4s; }
 .reveal-section.visible .feature-card:nth-child(5) { transition-delay: 0.5s; }
 .reveal-section.visible .feature-card:nth-child(6) { transition-delay: 0.6s; }
@@ -404,6 +405,11 @@ section {
     margin: 0 auto;
 }
 
+.pricing-grid.three-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+}
+
 .pricing-card {
     padding: 40px;
     border-radius: var(--border-radius);
@@ -417,6 +423,11 @@ section {
     border: 1px solid rgba(0, 113, 227, 0.3);
 }
 
+.pricing-card.lifetime {
+    background: linear-gradient(135deg, rgba(128, 0, 255, 0.15) 0%, var(--card-bg) 100%);
+    border: 1px solid rgba(128, 0, 255, 0.3);
+}
+
 .popular-badge {
     position: absolute;
     top: -14px;
@@ -427,6 +438,38 @@ section {
     border-radius: 99px;
     font-size: 13px;
     font-weight: 600;
+}
+
+.lifetime-badge {
+    position: absolute;
+    top: -14px;
+    right: 24px;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-lifetime {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btn-lifetime:hover {
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
 }
 
 .pricing-card h3 {
@@ -697,7 +740,7 @@ footer {
     .bento-item.large { grid-column: span 1; }
     .bento-item.large .bento-content { max-width: 100%; }
     
-    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+    .pricing-grid, .pricing-grid.three-cards { grid-template-columns: 1fr; max-width: 400px; }
     
     .footer-content { flex-direction: column; gap: 24px; }
     .footer-links { display: flex; flex-direction: column; align-items: center; gap: 16px; }
