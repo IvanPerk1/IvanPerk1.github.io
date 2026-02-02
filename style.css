@@ -678,6 +678,67 @@ footer {
     .footer-links a { margin: 0; }
 }
 
+/* Floating Contact Buttons */
+.floating-contacts {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+.floating-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.floating-btn:hover {
+    transform: scale(1.15);
+}
+
+.floating-telegram {
+    background: rgba(0, 136, 204, 0.85);
+    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+}
+
+.floating-telegram:hover {
+    box-shadow: 0 6px 28px rgba(0, 136, 204, 0.6);
+}
+
+.floating-email {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-email:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .floating-contacts {
+        bottom: 20px;
+        right: 16px;
+    }
+    
+    .floating-btn {
+        width: 44px;
+        height: 44px;
+    }
+}
+
 /* Update Banner */
 .update-banner {
     padding: 40px 0;
