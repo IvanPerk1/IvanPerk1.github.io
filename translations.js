@@ -13,7 +13,7 @@ const translations = {
         // Update banner
         'update-title': 'Version 1.4 is almost here!',
         'update-desc': 'New Windows Agent with installer, scheduled shutdown/restart, auto-updates, and more!',
-        
+         
         // Why Wake PC
         'why-title': 'Why Wake PC?',
         'why-subtitle': 'Unlike TeamViewer, AnyDesk, or Chrome Remote Desktop',

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal-section').forEach(section => {
         sectionObserver.observe(section);
     });
-
+ 
     // --- Изменение навбара при скролле --- 
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
