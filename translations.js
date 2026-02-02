@@ -24,7 +24,7 @@ const translations = {
         'auto-config-title': 'Auto Configuration',
         'auto-config-desc': 'Agent automatically configures Firewall, Wake-on-LAN, and system settings. Just click "Fix" and you\'re done!',
         'free-title': 'Free to Start',
-        'free-desc': 'Core Wake-on-LAN feature FREE FOREVER. Upgrade to Premium for more features at $2.99/month with 3-day free trial.',
+        'free-desc': 'Core Wake-on-LAN feature FREE FOREVER. Upgrade to Premium for more features at $1.99/month with 3-day free trial.',
         'native-title': 'Native iOS Experience',
         'native-desc': 'Built with SwiftUI. Feels like a true iOS app. Beautiful themes, haptic feedback, smooth animations.',
         'languages-title': '19 Languages',
@@ -79,7 +79,7 @@ const translations = {
         'unlimited-pcs': 'Unlimited computers',
         'all-themes': 'All 19 beautiful themes',
         'try-free': 'Try 3 Days Free',
-        'trial-note': 'Cancel anytime • $24.99/year option available',
+        'trial-note': 'Cancel anytime • $11.99/year — save 50%',
         
         // Steps
         'design-title': 'Beautiful design, powerful features',
@@ -122,7 +122,7 @@ const translations = {
         'auto-config-title': 'Авто-настройка',
         'auto-config-desc': 'Агент автоматически настраивает Брандмауэр, Wake-on-LAN и системные параметры. Просто нажмите "Fix" и готово!',
         'free-title': 'Бесплатный старт',
-        'free-desc': 'Базовая функция Wake-on-LAN БЕСПЛАТНА НАВСЕГДА. Premium за $2.99/мес с 3-дневным пробным периодом.',
+        'free-desc': 'Базовая функция Wake-on-LAN БЕСПЛАТНА НАВСЕГДА. Premium за $1.99/мес с 3-дневным пробным периодом.',
         'native-title': 'Нативный iOS опыт',
         'native-desc': 'Создано на SwiftUI. Ощущается как родное приложение iOS. Красивые темы, тактильный отклик, плавные анимации.',
         'languages-title': '19 языков',
@@ -177,7 +177,7 @@ const translations = {
         'unlimited-pcs': 'Неограниченно компьютеров',
         'all-themes': 'Все 19 красивых тем',
         'try-free': 'Попробовать 3 дня бесплатно',
-        'trial-note': 'Отмена в любое время • Доступен план $24.99/год',
+        'trial-note': 'Отмена в любое время • $11.99/год — скидка 50%',
         
         // Steps
         'design-title': 'Красивый дизайн, мощные функции',
@@ -220,7 +220,7 @@ const translations = {
         'auto-config-title': 'Авто-налаштування',
         'auto-config-desc': 'Агент автоматично налаштовує Брандмауер, Wake-on-LAN та системні параметри. Просто натисніть "Fix" і готово!',
         'free-title': 'Безкоштовний старт',
-        'free-desc': 'Базова функція Wake-on-LAN БЕЗКОШТОВНА НАЗАВЖДИ. Premium за $2.99/міс з 3-денним пробним періодом.',
+        'free-desc': 'Базова функція Wake-on-LAN БЕЗКОШТОВНА НАЗАВЖДИ. Premium за $1.99/міс з 3-денним пробним періодом.',
         'native-title': 'Нативний iOS досвід',
         'native-desc': 'Створено на SwiftUI. Відчувається як рідний додаток iOS. Красиві теми, тактильний відгук, плавні анімації.',
         'languages-title': '19 мов',
@@ -275,7 +275,7 @@ const translations = {
         'unlimited-pcs': 'Необмежено комп\'ютерів',
         'all-themes': 'Всі 19 красивих тем',
         'try-free': 'Спробувати 3 дні безкоштовно',
-        'trial-note': 'Скасування в будь-який час • Доступний план $24.99/рік',
+        'trial-note': 'Скасування в будь-який час • $11.99/рік — знижка 50%',
         
         // Steps
         'design-title': 'Красивий дизайн, потужні функції',

@@ -480,6 +480,32 @@ section {
     margin-bottom: 0;
 }
 
+.price-old {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.price-old-inline {
+    text-decoration: line-through;
+    opacity: 0.5;
+    margin-right: 2px;
+}
+
+.price-drop-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b35, #ff4500);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
 /* Скриншоты - Сетка */
 .screenshots-grid {
     display: flex;
