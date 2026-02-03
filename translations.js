@@ -11,7 +11,7 @@ const translations = {
         'hero-note': 'Free • No account required • Works on local network',
         
         // Update banner
-        'update-title': 'Version 1.4 is almost here!',
+        'update-title': 'Version 1.4 is here!',
         'update-desc': 'New Windows Agent with installer, scheduled shutdown/restart, auto-updates, and more!',
          
         // Why Wake PC
@@ -116,7 +116,7 @@ const translations = {
         'hero-note': 'Бесплатно • Без регистрации • Работает в локальной сети',
         
         // Update banner
-        'update-title': 'Версия 1.4 уже скоро!',
+        'update-title': 'Версия 1.4 уже вышла!',
         'update-desc': 'Новый Windows Агент с установщиком, отложенным выключением/перезагрузкой, автообновлениями и многим другим!',
         
         // Why Wake PC
@@ -221,7 +221,7 @@ const translations = {
         'hero-note': 'Безкоштовно • Без реєстрації • Працює в локальній мережі',
         
         // Update banner
-        'update-title': 'Версія 1.4 вже скоро!',
+        'update-title': 'Версія 1.4 вже вийшла!',
         'update-desc': 'Новий Windows Агент з інсталятором, відкладеним вимкненням/перезавантаженням, автооновленнями та багато іншого!',
         
         // Why Wake PC
