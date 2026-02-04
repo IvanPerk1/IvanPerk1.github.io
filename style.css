@@ -903,14 +903,14 @@ footer {
 }
 
 /* AI Bot Card - gradient like app icon */
-.ai-bot-card {
-    background: linear-gradient(135deg, rgba(94, 168, 230, 0.25) 0%, rgba(180, 130, 200, 0.2) 50%, rgba(230, 140, 180, 0.25) 100%);
-    border: 1px solid rgba(180, 130, 200, 0.4);
+.update-card.ai-bot-card {
+    background: linear-gradient(135deg, rgba(94, 168, 230, 0.3) 0%, rgba(180, 130, 200, 0.25) 50%, rgba(230, 140, 180, 0.3) 100%) !important;
+    border: 1px solid rgba(180, 130, 200, 0.5) !important;
 }
 
-.ai-bot-card .update-badge {
-    background: linear-gradient(135deg, #5EA8E6, #B482C8, #E68CB4);
-    color: #fff;
+.update-card.ai-bot-card .update-badge {
+    background: linear-gradient(135deg, #5EA8E6, #B482C8, #E68CB4) !important;
+    color: #fff !important;
 }
 
 .update-badge {
