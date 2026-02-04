@@ -13,6 +13,10 @@ const translations = {
         // Update banner
         'update-title': 'Version 1.4 is here!',
         'update-desc': 'New Windows Agent with installer, scheduled shutdown/restart, auto-updates, and more!',
+        'upd-feat1': 'Scheduled Actions',
+        'upd-feat2': 'Easy Installer',
+        'upd-feat3': 'Auto Updates',
+        'upd-feat4': 'Auto Configuration',
 
         // AI Bot
         'bot-title': 'AI Bot is Here!',
@@ -126,6 +130,10 @@ const translations = {
         // Update banner
         'update-title': 'Версия 1.4 уже вышла!',
         'update-desc': 'Новый Windows Агент с установщиком, отложенным выключением/перезагрузкой, автообновлениями и многим другим!',
+        'upd-feat1': 'Отложенные действия',
+        'upd-feat2': 'Простой установщик',
+        'upd-feat3': 'Автообновления',
+        'upd-feat4': 'Авто-настройка',
 
         // AI Bot
         'bot-title': 'AI Бот уже здесь!',
@@ -239,6 +247,10 @@ const translations = {
         // Update banner
         'update-title': 'Версія 1.4 вже вийшла!',
         'update-desc': 'Новий Windows Агент з інсталятором, відкладеним вимкненням/перезавантаженням, автооновленнями та багато іншого!',
+        'upd-feat1': 'Відкладені дії',
+        'upd-feat2': 'Простий інсталятор',
+        'upd-feat3': 'Автооновлення',
+        'upd-feat4': 'Авто-налаштування',
 
         // AI Bot
         'bot-title': 'AI Бот вже тут!',
