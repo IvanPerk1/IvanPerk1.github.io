@@ -18,6 +18,9 @@ const translations = {
         'bot-title': 'AI Bot is Here!',
         'bot-desc': 'Our new AI assistant knows everything about Wake PC. BIOS configuration, troubleshooting, setup help — or chat directly with the developer if needed.',
         'bot-btn': 'Chat Now',
+        'bot-feat1': 'Powered by AI',
+        'bot-feat2': 'BIOS Setup Help',
+        'bot-feat3': 'Direct Developer Contact',
 
         // Why Wake PC
         'why-title': 'Why Wake PC?',
@@ -128,6 +131,9 @@ const translations = {
         'bot-title': 'AI Бот уже здесь!',
         'bot-desc': 'Наш новый AI-ассистент знает всё о Wake PC. Настройка BIOS, решение проблем, помощь с установкой — или напиши напрямую разработчику.',
         'bot-btn': 'Написать',
+        'bot-feat1': 'На базе AI',
+        'bot-feat2': 'Помощь с BIOS',
+        'bot-feat3': 'Связь с разработчиком',
 
         // Why Wake PC
         'why-title': 'Почему Wake PC?',
@@ -238,6 +244,9 @@ const translations = {
         'bot-title': 'AI Бот вже тут!',
         'bot-desc': 'Наш новий AI-асистент знає все про Wake PC. Налаштування BIOS, вирішення проблем, допомога з установкою — або напиши напряму розробнику.',
         'bot-btn': 'Написати',
+        'bot-feat1': 'На базі AI',
+        'bot-feat2': 'Допомога з BIOS',
+        'bot-feat3': "Зв'язок з розробником",
 
         // Why Wake PC
         'why-title': 'Чому Wake PC?',

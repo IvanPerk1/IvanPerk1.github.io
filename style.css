@@ -902,6 +902,17 @@ footer {
     border: 1px solid rgba(0, 200, 83, 0.3);
 }
 
+/* AI Bot Card - gradient like app icon */
+.ai-bot-card {
+    background: linear-gradient(135deg, rgba(94, 168, 230, 0.25) 0%, rgba(180, 130, 200, 0.2) 50%, rgba(230, 140, 180, 0.25) 100%);
+    border: 1px solid rgba(180, 130, 200, 0.4);
+}
+
+.ai-bot-card .update-badge {
+    background: linear-gradient(135deg, #5EA8E6, #B482C8, #E68CB4);
+    color: #fff;
+}
+
 .update-badge {
     display: inline-block;
     background: linear-gradient(135deg, #00c853, #00e676);
