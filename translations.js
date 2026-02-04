@@ -13,7 +13,12 @@ const translations = {
         // Update banner
         'update-title': 'Version 1.4 is here!',
         'update-desc': 'New Windows Agent with installer, scheduled shutdown/restart, auto-updates, and more!',
-         
+
+        // AI Bot
+        'bot-title': 'AI Bot is Here!',
+        'bot-desc': 'Our new AI assistant knows everything about Wake PC. BIOS configuration, troubleshooting, setup help — or chat directly with the developer if needed.',
+        'bot-btn': 'Chat Now',
+
         // Why Wake PC
         'why-title': 'Why Wake PC?',
         'why-subtitle': 'Unlike TeamViewer, AnyDesk, or Chrome Remote Desktop',
@@ -118,7 +123,12 @@ const translations = {
         // Update banner
         'update-title': 'Версия 1.4 уже вышла!',
         'update-desc': 'Новый Windows Агент с установщиком, отложенным выключением/перезагрузкой, автообновлениями и многим другим!',
-        
+
+        // AI Bot
+        'bot-title': 'AI Бот уже здесь!',
+        'bot-desc': 'Наш новый AI-ассистент знает всё о Wake PC. Настройка BIOS, решение проблем, помощь с установкой — или напиши напрямую разработчику.',
+        'bot-btn': 'Написать',
+
         // Why Wake PC
         'why-title': 'Почему Wake PC?',
         'why-subtitle': 'В отличие от TeamViewer, AnyDesk или Chrome Remote Desktop',
@@ -223,7 +233,12 @@ const translations = {
         // Update banner
         'update-title': 'Версія 1.4 вже вийшла!',
         'update-desc': 'Новий Windows Агент з інсталятором, відкладеним вимкненням/перезавантаженням, автооновленнями та багато іншого!',
-        
+
+        // AI Bot
+        'bot-title': 'AI Бот вже тут!',
+        'bot-desc': 'Наш новий AI-асистент знає все про Wake PC. Налаштування BIOS, вирішення проблем, допомога з установкою — або напиши напряму розробнику.',
+        'bot-btn': 'Написати',
+
         // Why Wake PC
         'why-title': 'Чому Wake PC?',
         'why-subtitle': 'На відміну від TeamViewer, AnyDesk або Chrome Remote Desktop',
