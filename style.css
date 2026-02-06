@@ -1015,6 +1015,18 @@ footer {
     color: var(--text-primary);
 }
 
+/* Mac Compatibility Note */
+.mac-compat-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 20px 0 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, rgba(128, 0, 255, 0.06) 0%, rgba(0, 113, 227, 0.06) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(128, 0, 255, 0.15);
+}
+
 /* Mac Features Grid */
 .mac-features-grid {
     display: grid;

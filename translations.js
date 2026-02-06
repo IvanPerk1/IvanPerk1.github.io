@@ -120,9 +120,10 @@ const translations = {
         
         // Mac Agent Section
         'mac-section-title': 'Mac Agent',
-        'mac-section-subtitle': 'Full remote control for your Mac — right from your iPhone',
+        'mac-section-subtitle': 'Works on all Macs with macOS 14+ — MacBook, iMac, Mac mini, Mac Pro, Mac Studio',
         'mac-hero-heading': 'Control your Mac like never before',
         'mac-hero-desc': 'Wake PC Agent for Mac is a lightweight menu bar app that lets you remotely control your Mac from your iPhone. Same app, same interface — works seamlessly alongside your Windows PCs.',
+        'mac-compat-note': 'Compatible with all Mac models — MacBook Air, MacBook Pro, iMac, Mac mini, Mac Pro, Mac Studio. Supports Apple Silicon (M1–M4) and Intel.',
         'mac-download-btn': 'Download for Mac',
         'mac-free-title': 'Free',
         'mac-free-desc': 'Wake your Mac from sleep using Wake-on-LAN. No subscription needed.',
@@ -131,7 +132,7 @@ const translations = {
         'mac-volume-title': 'Volume',
         'mac-volume-desc': 'Adjust volume, mute/unmute, or set exact level with a slider.',
         'mac-brightness-title': 'Brightness',
-        'mac-brightness-desc': 'Control display brightness — works on MacBook and Apple displays.',
+        'mac-brightness-desc': 'Control display brightness — works on all MacBooks and Apple displays.',
         'mac-schedule-title': 'Scheduled Actions',
         'mac-schedule-desc': 'Schedule shutdown or restart in X hours and minutes.',
         'mac-qr-title': 'QR Setup',
@@ -282,9 +283,10 @@ const translations = {
         
         // Mac Agent Section
         'mac-section-title': 'Агент для Mac',
-        'mac-section-subtitle': 'Полное дистанционное управление вашим Mac — прямо с iPhone',
+        'mac-section-subtitle': 'Работает на всех Mac с macOS 14+ — MacBook, iMac, Mac mini, Mac Pro, Mac Studio',
         'mac-hero-heading': 'Управляйте Mac как никогда раньше',
         'mac-hero-desc': 'Wake PC Agent для Mac — легкое приложение в строке меню, которое позволяет управлять Mac удаленно с iPhone. То же приложение, тот же интерфейс — работает вместе с вашими Windows ПК.',
+        'mac-compat-note': 'Совместим со всеми моделями Mac — MacBook Air, MacBook Pro, iMac, Mac mini, Mac Pro, Mac Studio. Поддержка Apple Silicon (M1–M4) и Intel.',
         'mac-download-btn': 'Скачать для Mac',
         'mac-free-title': 'Бесплатно',
         'mac-free-desc': 'Будите Mac из режима сна через Wake-on-LAN. Подписка не нужна.',
@@ -293,7 +295,7 @@ const translations = {
         'mac-volume-title': 'Громкость',
         'mac-volume-desc': 'Регулируйте громкость, включайте/выключайте звук или задайте точный уровень.',
         'mac-brightness-title': 'Яркость',
-        'mac-brightness-desc': 'Управление яркостью дисплея — работает на MacBook и Apple дисплеях.',
+        'mac-brightness-desc': 'Управление яркостью дисплея — работает на всех MacBook и Apple дисплеях.',
         'mac-schedule-title': 'Отложенные действия',
         'mac-schedule-desc': 'Запланируйте выключение или перезагрузку через X часов и минут.',
         'mac-qr-title': 'Настройка по QR',
@@ -444,9 +446,10 @@ const translations = {
         
         // Mac Agent Section
         'mac-section-title': 'Агент для Mac',
-        'mac-section-subtitle': 'Повне дистанційне керування Mac — прямо з iPhone',
+        'mac-section-subtitle': 'Працює на всіх Mac з macOS 14+ — MacBook, iMac, Mac mini, Mac Pro, Mac Studio',
         'mac-hero-heading': 'Керуйте Mac як ніколи раніше',
         'mac-hero-desc': 'Wake PC Agent для Mac — легкий додаток у рядку меню, який дозволяє керувати Mac віддалено з iPhone. Той самий додаток, той самий інтерфейс — працює разом з вашими Windows ПК.',
+        'mac-compat-note': 'Сумісний з усіма моделями Mac — MacBook Air, MacBook Pro, iMac, Mac mini, Mac Pro, Mac Studio. Підтримка Apple Silicon (M1–M4) та Intel.',
         'mac-download-btn': 'Завантажити для Mac',
         'mac-free-title': 'Безкоштовно',
         'mac-free-desc': 'Будіть Mac зі сну через Wake-on-LAN. Підписка не потрібна.',
@@ -455,7 +458,7 @@ const translations = {
         'mac-volume-title': 'Гучність',
         'mac-volume-desc': 'Регулюйте гучність, вмикайте/вимикайте звук або задайте точний рівень.',
         'mac-brightness-title': 'Яскравість',
-        'mac-brightness-desc': 'Керування яскравістю дисплея — працює на MacBook та Apple дисплеях.',
+        'mac-brightness-desc': 'Керування яскравістю дисплея — працює на всіх MacBook та Apple дисплеях.',
         'mac-schedule-title': 'Відкладені дії',
         'mac-schedule-desc': 'Заплануйте вимкнення або перезавантаження через X годин і хвилин.',
         'mac-qr-title': 'Налаштування по QR',
