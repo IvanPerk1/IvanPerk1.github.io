@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Wake PC Agent for Mac</title>
+        <link>https://ivanperk1.github.io/appcast.xml</link>
+        <description>Wake PC Agent updates</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.0.0</title>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Wake PC Agent 1.0.0</h2>
+                <ul>
+                    <li>Initial release</li>
+                    <li>Shutdown, restart, sleep, lock screen</li>
+                    <li>Volume control</li>
+                    <li>Brightness control</li>
+                    <li>Scheduled shutdown/restart</li>
+                    <li>QR code pairing with iOS app</li>
+                    <li>19 languages</li>
+                </ul>
+            ]]></description>
+            <pubDate>Thu, 06 Feb 2026 17:00:00 +0000</pubDate>
+            <enclosure
+                url="https://github.com/IvanPerk1/IvanPerk1.github.io/releases/latest/download/WakePCAgent.dmg"
+                type="application/octet-stream"
+                sparkle:edSignature=""
+                length="0"
+            />
+        </item>
+    </channel>
+</rss>
