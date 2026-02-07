@@ -894,6 +894,29 @@ footer {
     opacity: 1;
 }
 
+/* Shimmer wrapper — animated gradient border for banners */
+.shimmer-wrapper {
+    position: relative;
+    padding: 2px;
+    border-radius: calc(var(--border-radius) + 2px);
+    background-size: 300% 300%;
+    animation: gradientShift 4s ease infinite;
+}
+
+.shimmer-wrapper .update-card {
+    border: none !important;
+}
+
+.shimmer-green {
+    background: linear-gradient(135deg, #00c853, #0071e3, #00e676, #00c853);
+    background-size: 300% 300%;
+}
+
+.shimmer-bot {
+    background: linear-gradient(135deg, #5EA8E6, #B482C8, #E68CB4, #5EA8E6);
+    background-size: 300% 300%;
+}
+
 .update-card {
     padding: 32px 40px;
     border-radius: var(--border-radius);
