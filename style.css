@@ -906,6 +906,13 @@ footer {
 .shimmer-wrapper .update-card {
     border: none !important;
     background: linear-gradient(135deg, rgba(0, 200, 83, 0.1) 0%, rgb(28, 28, 30) 100%) !important;
+    color: #fff !important;
+}
+
+.shimmer-wrapper .update-card h3,
+.shimmer-wrapper .update-card p,
+.shimmer-wrapper .update-card .update-feature {
+    color: #fff !important;
 }
 
 .shimmer-wrapper .update-card.ai-bot-card {
