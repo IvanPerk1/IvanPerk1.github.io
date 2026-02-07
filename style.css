@@ -905,6 +905,11 @@ footer {
 
 .shimmer-wrapper .update-card {
     border: none !important;
+    background: linear-gradient(135deg, rgba(0, 200, 83, 0.1) 0%, rgb(28, 28, 30) 100%) !important;
+}
+
+.shimmer-wrapper .update-card.ai-bot-card {
+    background: linear-gradient(135deg, rgba(94, 168, 230, 0.2) 0%, rgba(180, 130, 200, 0.15) 50%, rgb(28, 28, 30) 100%) !important;
 }
 
 .shimmer-green {
