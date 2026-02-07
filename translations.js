@@ -156,6 +156,9 @@ const translations = {
         'mac-compare-brightness': 'Brightness',
         'mac-compare-schedule': 'Scheduled Actions',
         'mac-compare-hibernate': 'Hibernate',
+        'mac-badge-text': 'v1.0 — Just Released',
+        'mac-coming-soon': 'More features coming soon',
+        'mac-coming-features': 'File Transfer \u2022 Screen Preview \u2022 Custom Commands',
 
         // Footer
         'privacy': 'Privacy Policy',
@@ -319,6 +322,9 @@ const translations = {
         'mac-compare-brightness': 'Яркость',
         'mac-compare-schedule': 'Отложенные действия',
         'mac-compare-hibernate': 'Гибернация',
+        'mac-badge-text': 'v1.0 — Только вышел',
+        'mac-coming-soon': 'Скоро ещё больше функций',
+        'mac-coming-features': 'Передача файлов \u2022 Превью экрана \u2022 Свои команды',
 
         // Footer
         'privacy': 'Политика конфиденциальности',
@@ -482,6 +488,9 @@ const translations = {
         'mac-compare-brightness': 'Яскравість',
         'mac-compare-schedule': 'Відкладені дії',
         'mac-compare-hibernate': 'Гібернація',
+        'mac-badge-text': 'v1.0 — Щойно вийшов',
+        'mac-coming-soon': 'Незабаром ще більше функцій',
+        'mac-coming-features': 'Передача файлів \u2022 Превʼю екрана \u2022 Свої команди',
 
         // Footer
         'privacy': 'Політика конфіденційності',

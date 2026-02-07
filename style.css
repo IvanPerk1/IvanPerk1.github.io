@@ -957,12 +957,44 @@ footer {
 }
 
 /* Mac Agent Section */
+
+/* Animated gradient border wrapper */
+@keyframes borderRotate {
+    0% { --angle: 0deg; }
+    100% { --angle: 360deg; }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6), 0 0 80px rgba(0, 113, 227, 0.2); }
+}
+
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 8px rgba(139, 92, 246, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 40px rgba(0, 113, 227, 0.3); }
+}
+
+.mac-hero-card-wrapper {
+    position: relative;
+    padding: 2px;
+    border-radius: calc(var(--border-radius) + 2px);
+    background: linear-gradient(135deg, #8b5cf6, #0071e3, #ec4899, #8b5cf6);
+    background-size: 300% 300%;
+    animation: gradientShift 4s ease infinite;
+    margin-bottom: 40px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .mac-hero-card {
     border-radius: var(--border-radius);
     padding: 48px;
-    background: linear-gradient(135deg, rgba(128, 0, 255, 0.12) 0%, rgba(0, 113, 227, 0.12) 100%);
-    border: 1px solid rgba(128, 0, 255, 0.25);
-    margin-bottom: 40px;
+    background: linear-gradient(135deg, rgba(128, 0, 255, 0.15) 0%, rgba(0, 113, 227, 0.15) 50%, rgba(236, 72, 153, 0.08) 100%);
+    border: none;
 }
 
 .mac-hero-row {
@@ -979,7 +1011,7 @@ footer {
     display: inline-block;
     background: linear-gradient(135deg, #8b5cf6, #0071e3);
     color: #fff;
-    padding: 5px 14px;
+    padding: 6px 18px;
     border-radius: 99px;
     font-size: 13px;
     font-weight: 700;
@@ -987,32 +1019,59 @@ footer {
     letter-spacing: 0.5px;
 }
 
+.mac-badge-glow {
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
 .mac-hero-text h3 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 16px;
     line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .mac-hero-text p {
     font-size: 17px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     line-height: 1.6;
+}
+
+/* Feature pills row */
+.mac-hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.mac-pill {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #c4b5fd;
+    letter-spacing: 0.3px;
 }
 
 .mac-hero-icon {
     flex-shrink: 0;
+    color: var(--text-primary);
+    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.4));
 }
 
-.mac-icon-circle {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(128, 0, 255, 0.2), rgba(0, 113, 227, 0.2));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-primary);
+.mac-icon-glow {
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3)); }
+    50% { filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.6)) drop-shadow(0 0 80px rgba(0, 113, 227, 0.2)); }
 }
 
 /* Mac Compatibility Note */
@@ -1038,16 +1097,26 @@ footer {
 .mac-feature-item {
     padding: 28px;
     border-radius: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .mac-feature-item:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.3);
 }
 
 .mac-feature-icon-small {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 36px;
+    margin-bottom: 14px;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(139, 92, 246, 0.1);
 }
 
 .mac-feature-item h4 {
@@ -1060,6 +1129,31 @@ footer {
     font-size: 14px;
     margin: 0;
     line-height: 1.5;
+}
+
+/* Coming Soon */
+.mac-coming-soon {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 24px;
+}
+
+.mac-coming-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(249, 115, 22, 0.15));
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    color: #fbbf24;
+    margin-bottom: 12px;
+}
+
+.mac-coming-features {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin: 0;
 }
 
 /* Mac Setup Card */
@@ -1099,6 +1193,25 @@ footer {
     justify-content: center;
     font-size: 16px;
     font-weight: 700;
+}
+
+.mac-step-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #0071e3);
+}
+
+/* Timeline connector */
+.mac-timeline .mac-step {
+    position: relative;
+}
+
+.mac-timeline .mac-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 42px;
+    width: 2px;
+    height: calc(100% - 6px);
+    background: linear-gradient(to bottom, rgba(139, 92, 246, 0.4), rgba(0, 113, 227, 0.2));
 }
 
 .mac-step strong {
@@ -1145,11 +1258,25 @@ footer {
     border-bottom: 1px solid var(--glass-border);
     padding-bottom: 16px;
     margin-bottom: 4px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 113, 227, 0.1));
+    border-radius: 12px;
+    padding: 14px 16px;
 }
 
 .comparison-row {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 15px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.comparison-row:hover {
+    background: rgba(139, 92, 246, 0.06);
+}
+
+.comparison-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .comparison-row:last-child {
@@ -1170,11 +1297,12 @@ footer {
     .mac-hero-row { flex-direction: column; gap: 28px; text-align: center; }
     .mac-hero-text .btn { margin: 0 auto; }
     .mac-hero-text h3 { font-size: 26px; }
+    .mac-hero-pills { justify-content: center; }
     .mac-icon-circle { width: 120px; height: 120px; }
     .mac-icon-circle svg { width: 60px; height: 60px; }
     .mac-features-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
     .mac-feature-item { padding: 20px; }
     .mac-setup-card { padding: 24px; }
     .mac-comparison { padding: 24px; }
-    .comparison-header, .comparison-row { grid-template-columns: 1fr 70px 70px; font-size: 13px; }
+    .comparison-header, .comparison-row { grid-template-columns: 1fr 70px 70px; font-size: 13px; padding: 10px 8px; }
 }
