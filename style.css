@@ -910,9 +910,11 @@ footer {
 }
 
 .shimmer-wrapper .update-card h3,
+.shimmer-wrapper .update-card > p,
 .shimmer-wrapper .update-card p,
 .shimmer-wrapper .update-card .update-feature {
-    color: #fff !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
 .shimmer-wrapper .update-card.ai-bot-card {
