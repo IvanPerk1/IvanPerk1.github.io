@@ -45,24 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Переключение языков (Логика отображения) ---
-    // Основная логика переводов находится в translations.js,
-    // здесь мы только управляем визуальным состоянием кнопок.
-    const langBtns = document.querySelectorAll('.lang-btn');
-    langBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Убираем активный класс у всех кнопок
-            langBtns.forEach(b => b.classList.remove('active'));
-            // Добавляем активный класс нажатой кнопке
-            btn.classList.add('active');
-            
-            // Вызываем функцию смены языка из translations.js
-            const lang = btn.getAttribute('data-lang');
-            if (typeof setLanguage === 'function') {
-                setLanguage(lang);
-            }
-        });
-    });
+    // --- Переключение языков (dropdown sync) ---
+    // Основная логика переводов находится в translations.js (setLanguage).
+    // Здесь только синхронизируем оба dropdown (desktop + mobile).
+    const langDesktop = document.getElementById('lang-select-desktop');
+    const langMobile = document.getElementById('lang-select-mobile');
+    if (langDesktop && langMobile) {
+        langDesktop.addEventListener('change', () => { langMobile.value = langDesktop.value; });
+        langMobile.addEventListener('change', () => { langDesktop.value = langMobile.value; });
+    }
 
     // Плавный скролл для якорей (для старых браузеров, хотя CSS scroll-behavior обычно справляется)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

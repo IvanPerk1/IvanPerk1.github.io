@@ -85,7 +85,7 @@ p {
 }
 
 /* Мобильный переключатель языков - скрыт на десктопе */
-.lang-switcher-mobile {
+.lang-dropdown-mobile {
     display: none !important;
 }
 
@@ -237,30 +237,76 @@ p {
     color: var(--text-primary);
 }
 
-/* Переключатель языков */
-.lang-switcher {
-    display: flex;
+/* Language Dropdown */
+.lang-dropdown {
     margin-left: 32px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 4px;
-}
-
-.lang-btn {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
     padding: 6px 12px;
     font-size: 13px;
     font-weight: 600;
+    color: var(--text-primary);
     cursor: pointer;
-    border-radius: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='%23a1a1a6'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 28px;
     transition: all 0.2s;
+    font-family: var(--font-main);
 }
 
-.lang-btn.active {
-    background: rgba(255, 255, 255, 0.15);
-    color: var(--text-primary);
+.lang-dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.lang-dropdown:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.3);
+}
+
+.lang-dropdown option {
+    background: #1c1c1e;
+    color: #fff;
+    padding: 8px;
+}
+
+/* RTL support */
+html[dir="rtl"] .icon-btn svg {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+html[dir="rtl"] .nav-links a {
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+html[dir="rtl"] .lang-dropdown {
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+html[dir="rtl"] .comparison-feature {
+    text-align: right;
+}
+
+html[dir="rtl"] .testimonial-info {
+    text-align: right;
+}
+
+html[dir="rtl"] .check {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+html[dir="rtl"] .footer-links a {
+    margin-left: 0;
+    margin-right: 32px;
 }
 
 .mobile-menu-btn {
@@ -716,25 +762,19 @@ footer {
     .nav-links a:last-child {
         border-bottom: none;
     }
-    .lang-switcher { 
+    #lang-select-desktop {
         display: none;
     }
     .mobile-menu-btn { display: block; }
-    
+
     /* Языки в навбаре для мобилки */
-    .lang-switcher-mobile {
-        display: flex !important;
+    .lang-dropdown-mobile {
+        display: block !important;
         margin-left: auto;
         margin-right: 16px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        padding: 3px;
-    }
-    
-    .lang-switcher-mobile .lang-btn {
-        padding: 5px 8px;
-        font-size: 11px;
-        border-radius: 9px;
+        font-size: 12px;
+        padding: 5px 24px 5px 8px;
+        border-radius: 10px;
     }
     
     .bento-grid { grid-template-columns: 1fr; }

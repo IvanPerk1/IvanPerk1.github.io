@@ -17,11 +17,27 @@
                 <img src="app-icon.png" alt="Wake PC Logo">
                 <span>Wake PC</span>
             </a>
-            <div class="lang-switcher lang-switcher-mobile">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="ru">RU</button>
-                <button class="lang-btn" data-lang="uk">UK</button>
-            </div>
+            <select class="lang-dropdown lang-dropdown-mobile" id="lang-select-mobile" onchange="setLanguage(this.value)">
+                <option value="en">🇬🇧 English</option>
+                <option value="ar">🇸🇦 العربية</option>
+                <option value="be">🇧🇾 Беларуская</option>
+                <option value="ca">Català</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="fa">🇮🇷 فارسی</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="id">🇮🇩 Indonesia</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="ko">🇰🇷 한국어</option>
+                <option value="ms">🇲🇾 Melayu</option>
+                <option value="nl">🇳🇱 Nederlands</option>
+                <option value="pl">🇵🇱 Polski</option>
+                <option value="pt">🇵🇹 Português</option>
+                <option value="ru">🇷🇺 Русский</option>
+                <option value="tr">🇹🇷 Türkçe</option>
+                <option value="uk">🇺🇦 Українська</option>
+                <option value="uz">🇺🇿 Oʻzbekcha</option>
+            </select>
             <div class="nav-links-container">
                 <div class="nav-links">
                     <a href="#features" data-i18n="nav-features">Features</a>
@@ -30,11 +46,27 @@
                     <a href="#pricing" data-i18n="nav-pricing">Pricing</a>
                     <a href="#download" data-i18n="nav-download">Download</a>
                 </div>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="uk">UK</button>
-                </div>
+                <select class="lang-dropdown" id="lang-select-desktop" onchange="setLanguage(this.value)">
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="be">🇧🇾 Беларуская</option>
+                    <option value="ca">Català</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="fa">🇮🇷 فارسی</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="id">🇮🇩 Indonesia</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                    <option value="ko">🇰🇷 한국어</option>
+                    <option value="ms">🇲🇾 Melayu</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="pl">🇵🇱 Polski</option>
+                    <option value="pt">🇵🇹 Português</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="uk">🇺🇦 Українська</option>
+                    <option value="uz">🇺🇿 Oʻzbekcha</option>
+                </select>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
