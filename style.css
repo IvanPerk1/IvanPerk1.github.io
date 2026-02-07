@@ -1074,6 +1074,8 @@ footer {
     font-size: 17px;
     margin-bottom: 20px;
     line-height: 1.6;
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
 /* Feature pills row */
@@ -1092,7 +1094,7 @@ footer {
     font-weight: 600;
     background: rgba(139, 92, 246, 0.15);
     border: 1px solid rgba(139, 92, 246, 0.3);
-    color: #c4b5fd;
+    color: #ffffff;
     letter-spacing: 0.3px;
 }
 
