@@ -114,7 +114,7 @@ echo [10] Task Scheduler:
 schtasks /Query /TN "WakePCAgent" >nul 2>nul
 if !errorlevel!==0 (
     echo   OK - Task exists
-    powershell -NoProfile -Command "$raw = schtasks /Query /TN 'WakePCAgent' /XML ONE 2>&1 | Out-String; $xml = [xml]$raw; $exec = $xml.Task.Actions.Exec.Command; $args2 = $xml.Task.Actions.Exec.Arguments; $rl = $xml.Task.Principals.Principal.RunLevel; Write-Host ('  Exe: ' + $exec); if ($args2) { Write-Host ('  Args: ' + $args2) }; $cleanPath = $exec -replace '\"',''; if ($cleanPath -and (Test-Path $cleanPath)) { Write-Host '  Exe exists: YES' } else { Write-Host '  Exe exists: NO - WILL FAIL' }; Write-Host ('  RunLevel: ' + $rl); foreach ($t in $xml.Task.Triggers.ChildNodes) { Write-Host ('  Trigger: ' + $t.LocalName); if ($t.Delay) { Write-Host ('  Delay: ' + $t.Delay) } }"
+    powershell -NoProfile -Command "$raw = schtasks /Query /TN 'WakePCAgent' /XML ONE 2>&1 | Out-String; $xml = [xml]$raw; $exec = $xml.Task.Actions.Exec.Command; $args2 = $xml.Task.Actions.Exec.Arguments; $rl = $xml.Task.Principals.Principal.RunLevel; Write-Host ('  Exe: ' + $exec); if ($args2) { Write-Host ('  Args: ' + $args2) }; $cleanPath = $exec.Trim([char]34); if ($cleanPath -and (Test-Path $cleanPath)) { Write-Host '  Exe exists: YES' } else { Write-Host '  Exe exists: NO - WILL FAIL' }; Write-Host ('  RunLevel: ' + $rl); foreach ($t in $xml.Task.Triggers.ChildNodes) { Write-Host ('  Trigger: ' + $t.LocalName); if ($t.Delay) { Write-Host ('  Delay: ' + $t.Delay) } }"
     powershell -NoProfile -Command "$o = schtasks /Query /TN 'WakePCAgent' /V /FO LIST 2>&1; $l = $o | Select-String 'Status|Last Run|Result'; foreach ($x in $l) { Write-Host ('  ' + $x.Line.Trim()) }"
 ) else (
     echo   FAIL - Task MISSING
