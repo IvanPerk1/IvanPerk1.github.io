@@ -87,12 +87,12 @@ powershell -NoProfile -Command "$p = Get-Process WakePCAgent -EA SilentlyContinu
 :: -- 6. PORT 8765 --
 echo.
 echo [6] Port 8765:
-powershell -NoProfile -Command "$l = netstat -ano | Select-String ':8765\s'; if ($l) { foreach ($x in $l) { $parts = $x.Line.Trim() -split '\s+'; $pid = $parts[-1]; $pn = (Get-Process -Id $pid -EA SilentlyContinue).ProcessName; Write-Host ('  ' + $x.Line.Trim() + ' [' + $pn + ']') } } else { Write-Host '  FAIL - Port 8765 NOT listening' }"
+powershell -NoProfile -Command "$l = netstat -ano | Select-String ':8765\s'; if ($l) { foreach ($x in $l) { $parts = $x.Line.Trim() -split '\s+'; $procId = $parts[-1]; $pn = (Get-Process -Id $procId -EA SilentlyContinue).ProcessName; Write-Host ('  ' + $x.Line.Trim() + ' [' + $pn + ']') } } else { Write-Host '  FAIL - Port 8765 NOT listening' }"
 
 :: -- 7. API SELF-TEST --
 echo.
 echo [7] API response:
-powershell -NoProfile -Command "try { $r = Invoke-WebRequest -Uri http://localhost:8765/status -UseBasicParsing -TimeoutSec 5; $j = $r.Content | ConvertFrom-Json; Write-Host ('  OK - IP: ' + $j.ip + ' | MAC: ' + $j.mac) } catch { Write-Host ('  FAIL - ' + $_.Exception.Message) }"
+powershell -NoProfile -Command "try { $r = Invoke-WebRequest -Uri http://localhost:8765/status -UseBasicParsing -TimeoutSec 5; $j = $r.Content | ConvertFrom-Json; $ip = if ($j.data.ip) {$j.data.ip} elseif ($j.ip) {$j.ip} else {'?'}; $mac = if ($j.data.mac) {$j.data.mac} elseif ($j.mac) {$j.mac} else {'?'}; Write-Host ('  OK - IP: ' + $ip + ' | MAC: ' + $mac) } catch { Write-Host ('  FAIL - ' + $_.Exception.Message) }"
 
 :: -- 8. FIREWALL --
 echo.
@@ -114,7 +114,7 @@ echo [10] Task Scheduler:
 schtasks /Query /TN "WakePCAgent" >nul 2>nul
 if !errorlevel!==0 (
     echo   OK - Task exists
-    powershell -NoProfile -Command "$xml = [xml](schtasks /Query /TN 'WakePCAgent' /XML 2>&1); $exec = $xml.Task.Actions.Exec.Command; $rl = $xml.Task.Principals.Principal.RunLevel; Write-Host ('  Exe: ' + $exec); if (Test-Path $exec) { Write-Host '  Exe exists: YES' } else { Write-Host '  Exe exists: NO - WILL FAIL' }; Write-Host ('  RunLevel: ' + $rl); foreach ($t in $xml.Task.Triggers.ChildNodes) { Write-Host ('  Trigger: ' + $t.LocalName); if ($t.Delay) { Write-Host ('  Delay: ' + $t.Delay) } }"
+    powershell -NoProfile -Command "$raw = schtasks /Query /TN 'WakePCAgent' /XML ONE 2>&1 | Out-String; $xml = [xml]$raw; $exec = $xml.Task.Actions.Exec.Command; $args2 = $xml.Task.Actions.Exec.Arguments; $rl = $xml.Task.Principals.Principal.RunLevel; Write-Host ('  Exe: ' + $exec); if ($args2) { Write-Host ('  Args: ' + $args2) }; if ($exec -and (Test-Path $exec)) { Write-Host '  Exe exists: YES' } else { Write-Host '  Exe exists: NO - WILL FAIL' }; Write-Host ('  RunLevel: ' + $rl); foreach ($t in $xml.Task.Triggers.ChildNodes) { Write-Host ('  Trigger: ' + $t.LocalName); if ($t.Delay) { Write-Host ('  Delay: ' + $t.Delay) } }"
     powershell -NoProfile -Command "$o = schtasks /Query /TN 'WakePCAgent' /V /FO LIST 2>&1; $l = $o | Select-String 'Status|Last Run|Result'; foreach ($x in $l) { Write-Host ('  ' + $x.Line.Trim()) }"
 ) else (
     echo   FAIL - Task MISSING
