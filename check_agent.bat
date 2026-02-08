@@ -6,12 +6,14 @@ set "reportdir=%LOCALAPPDATA%\WakePC Agent"
 if not exist "%reportdir%" mkdir "%reportdir%"
 set "report=%reportdir%\diagnostics.txt"
 
-:: Tee helper — all output goes to screen AND file
-:: We use a sub-script approach: run ourselves with redirection
+:: Self-call: run all checks → save to file → show on screen
 if "%~1"=="" (
-    "%~f0" run 2>&1 | powershell -Command "$input | ForEach-Object { $_; Add-Content -Path '%report%' -Value $_ }"
+    "%~f0" run > "%report%" 2>&1
+    type "%report%"
     echo.
-    echo Report saved to: %report%
+    echo ============================================
+    echo   Report saved to: %report%
+    echo ============================================
     echo.
     pause
     exit /b
