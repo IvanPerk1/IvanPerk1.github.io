@@ -1,9 +1,10 @@
 @echo off
 chcp 65001 >nul
+setlocal enabledelayedexpansion
 
 set "reportdir=%LOCALAPPDATA%\WakePC Agent"
-if not exist "%reportdir%" mkdir "%reportdir%"
-set "report=%reportdir%\diagnostics.txt"
+if not exist "!reportdir!" mkdir "!reportdir!"
+set "report=!reportdir!\diagnostics.txt"
 set "installdir=C:\Program Files (x86)\WakePC Agent"
 
 echo.
@@ -25,12 +26,12 @@ if %errorlevel%==0 (
 :: ── 2. INSTALLED FILES ──
 echo.
 echo [2] Installed files:
-if exist "%installdir%\WakePCAgent.exe" (
+if exist "!installdir!\WakePCAgent.exe" (
     echo   OK - WakePCAgent.exe found
 ) else (
     echo   FAIL - WakePCAgent.exe NOT FOUND
 )
-if exist "%installdir%\WakePCAgent.dll" (
+if exist "!installdir!\WakePCAgent.dll" (
     echo   OK - WakePCAgent.dll found
 ) else (
     echo   FAIL - WakePCAgent.dll NOT FOUND
@@ -121,7 +122,7 @@ powershell -Command "$ev = Get-WinEvent -FilterHashtable @{LogName='Application'
 echo.
 echo [17] Agent log (last 20 lines):
 set "logfile=%LOCALAPPDATA%\WakePC Agent\agent.log"
-if exist "%logfile%" (
+if exist "!logfile!" (
     powershell -Command "$s = (Get-Item '%LOCALAPPDATA%\WakePC Agent\agent.log').Length; Write-Host ('  Size: ' + [math]::Round($s/1KB,1) + ' KB')"
     echo.
     powershell -Command "Get-Content '%LOCALAPPDATA%\WakePC Agent\agent.log' -Tail 20"
