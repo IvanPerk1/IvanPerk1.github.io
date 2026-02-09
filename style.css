@@ -129,6 +129,7 @@ p {
 .reveal-section.visible .feature-card:nth-child(7) { transition-delay: 0.7s; }
 .reveal-section.visible .feature-card:nth-child(8) { transition-delay: 0.8s; }
 .reveal-section.visible .feature-card:nth-child(9) { transition-delay: 0.9s; }
+.reveal-section.visible .feature-card:nth-child(10) { transition-delay: 1.0s; }
 
 /* Apple-style text reveal */
 .reveal-section h2,
@@ -429,6 +430,32 @@ section {
     margin-bottom: 0;
 }
 
+.feature-card-wide {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.feature-card-wide .feature-icon {
+    margin-bottom: 0;
+    font-size: 48px;
+}
+
+.feature-card-wide h3 {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .feature-card-wide {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-card-wide .feature-icon {
+        margin-bottom: 12px;
+    }
+}
+
 /* Bento Grid */
 .bento-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -678,7 +705,7 @@ section {
 
 /* Подвал */
 footer {
-    padding: 40px 0;
+    padding: 14px 0 18px;
     margin-top: var(--section-spacing);
 }
 
@@ -709,7 +736,8 @@ footer {
     color: var(--text-secondary);
     text-decoration: none;
     margin-left: 32px;
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 300;
     transition: color 0.2s;
 }
 
@@ -819,12 +847,12 @@ footer {
 }
 
 .floating-telegram {
-    background: rgba(0, 136, 204, 0.85);
-    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+    background: transparent;
+    box-shadow: none;
 }
 
 .floating-telegram:hover {
-    box-shadow: 0 6px 28px rgba(0, 136, 204, 0.6);
+    box-shadow: none;
 }
 
 .floating-email {
