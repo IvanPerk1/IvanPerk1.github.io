@@ -176,6 +176,7 @@ p {
 .reveal-section.visible .screenshot-item:nth-child(5) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.4s; }
 .reveal-section.visible .screenshot-item:nth-child(6) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.45s; }
 .reveal-section.visible .screenshot-item:nth-child(7) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.5s; }
+.reveal-section.visible .screenshot-item:nth-child(8) { opacity: 1; transform: translateY(0) scale(1); transition-delay: 0.55s; }
 
 /* Навигация */
 .navbar {
