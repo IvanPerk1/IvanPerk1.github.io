@@ -1028,6 +1028,9 @@ footer {
     text-align: center;
     padding: 24px 20px;
     border-radius: var(--border-radius);
+    border: none !important;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .banners-grid .update-card p {
@@ -1040,6 +1043,10 @@ footer {
 
 .banners-grid .update-features {
     margin-top: auto;
+}
+
+.banners-grid .shimmer-wrapper .update-card.ai-bot-card {
+    border: none !important;
 }
 
 @media (max-width: 768px) {
