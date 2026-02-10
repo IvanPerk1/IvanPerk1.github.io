@@ -1057,6 +1057,41 @@ footer {
     border: none !important;
 }
 
+@media (min-width: 1400px) {
+    .banners-grid .update-card {
+        padding: 32px 28px;
+    }
+    .banners-grid .update-card h3 {
+        font-size: 26px;
+    }
+    .banners-grid .update-card p {
+        font-size: 17px;
+    }
+    .banners-grid .update-feature {
+        font-size: 15px;
+        padding: 10px 18px;
+        min-width: 140px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .banners-grid .update-card {
+        padding: 40px 34px;
+    }
+    .banners-grid .update-card h3 {
+        font-size: 30px;
+    }
+    .banners-grid .update-card p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .banners-grid .update-feature {
+        font-size: 16px;
+        padding: 10px 20px;
+        min-width: 160px;
+    }
+}
+
 @media (max-width: 768px) {
     .banners-grid {
         grid-template-columns: 1fr;
