@@ -1034,11 +1034,12 @@ footer {
 }
 
 .banners-grid .update-card p {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 .banners-grid .update-card h3 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .banners-grid .update-features {
@@ -1047,8 +1048,8 @@ footer {
 
 .banners-grid .update-feature {
     min-width: 120px;
-    font-size: 12px;
-    padding: 6px 12px;
+    font-size: 14px;
+    padding: 8px 14px;
     background: rgba(255, 255, 255, 0.06);
 }
 
