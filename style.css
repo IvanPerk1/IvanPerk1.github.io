@@ -1034,15 +1034,22 @@ footer {
 }
 
 .banners-grid .update-card p {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .banners-grid .update-card h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .banners-grid .update-features {
     margin-top: auto;
+}
+
+.banners-grid .update-feature {
+    min-width: 120px;
+    font-size: 12px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .banners-grid .shimmer-wrapper .update-card.ai-bot-card {
@@ -1122,11 +1129,13 @@ footer {
 }
 
 .update-feature {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.07);
     padding: 8px 16px;
     border-radius: 99px;
     font-size: 14px;
     font-weight: 500;
+    min-width: 140px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
