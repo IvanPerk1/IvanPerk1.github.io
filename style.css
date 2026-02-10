@@ -1000,6 +1000,50 @@ footer {
     background-size: 300% 300%;
 }
 
+.shimmer-mac {
+    background: linear-gradient(135deg, #A8A8A8, #7B68EE, #C0C0C0, #A8A8A8);
+    background-size: 300% 300%;
+}
+
+.banners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: stretch;
+}
+
+.banners-grid .shimmer-wrapper {
+    height: 100%;
+}
+
+.banners-grid .update-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 24px 20px;
+}
+
+.banners-grid .update-card p {
+    font-size: 13px;
+}
+
+.banners-grid .update-card h3 {
+    font-size: 18px;
+}
+
+.banners-grid .update-features {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .banners-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .update-card {
     padding: 32px 40px;
     border-radius: var(--border-radius);
