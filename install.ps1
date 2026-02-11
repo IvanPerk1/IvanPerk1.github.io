@@ -3,7 +3,7 @@ Write-Host "  Wake PC Agent - Installer" -ForegroundColor Cyan
 Write-Host "  wakepc.app" -ForegroundColor DarkGray
 Write-Host ""
 
-$url = "https://github.com/IvanPerk1/IvanPerk1.github.io/releases/latest/download/WakePCAgentSetup.exe"
+$url = "https://github.com/IvanPerk1/IvanPerk1.github.io/releases/download/v2.1/WakePCAgentSetup.exe"
 $output = "$env:USERPROFILE\Desktop\WakePCAgentSetup.exe"
 
 Write-Host "  Downloading WakePCAgentSetup.exe..." -ForegroundColor Yellow
