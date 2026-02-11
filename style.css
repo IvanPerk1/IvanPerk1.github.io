@@ -1054,7 +1054,7 @@ footer {
 
 /* Bot horizontal banner */
 .bot-banner-wrapper {
-    margin-top: 72px;
+    margin-top: 0;
 }
 
 .bot-header {
