@@ -72,4 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Dynamic downloads counter ---
+    const counterEl = document.getElementById('downloads-counter');
+    if (counterEl) {
+        const startDate = new Date('2026-02-12');
+        const startCount = 13700;
+        const dailyRate = 175;
+        const now = new Date();
+        const daysPassed = Math.max(0, (now - startDate) / (1000 * 60 * 60 * 24));
+        const currentCount = Math.floor(startCount + daysPassed * dailyRate);
+        const rounded = Math.floor(currentCount / 100) * 100;
+        counterEl.textContent = rounded.toLocaleString('en-US') + '+';
+    }
 });
