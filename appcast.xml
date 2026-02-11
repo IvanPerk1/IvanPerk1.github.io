@@ -6,6 +6,29 @@
         <description>Wake PC Agent updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.2.0</title>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Wake PC Agent 1.2.0</h2>
+                <ul>
+                    <li>Apple Liquid Glass UI on macOS 26</li>
+                    <li>New button layout with icons and labels</li>
+                    <li>Fixed network change detection (IP/QR auto-update)</li>
+                    <li>Request counter in menu bar</li>
+                    <li>Improved localizations (19 languages)</li>
+                </ul>
+            ]]></description>
+            <pubDate>Tue, 11 Feb 2026 22:00:00 +0000</pubDate>
+            <enclosure
+                url="https://github.com/IvanPerk1/IvanPerk1.github.io/releases/download/v1.2.0-mac/WakeMacAgent_v1.2.dmg"
+                type="application/octet-stream"
+                sparkle:edSignature="8VqbAPSIqbI7Qy07varryqA3DyiOhbqv+JM3WA+JhMNlfHC+85qdEo1gF2vmrMAo5ZM1e0N3qXy04PXgIVszCQ=="
+                length="3006116"
+            />
+        </item>
+        <item>
             <title>Version 1.0.0</title>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
