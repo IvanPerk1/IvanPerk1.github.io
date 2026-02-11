@@ -84,11 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let count = Math.floor(startCount + daysPassed * dailyRate);
         counterEl.textContent = count.toLocaleString('en-US') + '+';
 
-        function tick() {
-            count += Math.floor(Math.random() * 3) + 1;
+        // 175/day ≈ +1 every 8 min. First tick faster so user notices.
+        function tick(isFirst) {
+            count += 1;
             counterEl.textContent = count.toLocaleString('en-US') + '+';
-            setTimeout(tick, (Math.random() * 15 + 8) * 1000);
+            const nextMin = Math.random() * 5 + 6; // 6-11 min (~170/day)
+            setTimeout(() => tick(false), nextMin * 60 * 1000);
         }
-        setTimeout(tick, (Math.random() * 10 + 5) * 1000);
+        setTimeout(() => tick(true), (Math.random() * 30 + 30) * 1000); // first tick 30-60s
     }
 });
