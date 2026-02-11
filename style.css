@@ -983,7 +983,7 @@ footer {
     display: flex;
     gap: 20px;
     width: max-content;
-    animation: marquee 60s linear infinite;
+    animation: marquee 90s linear infinite;
 }
 
 .reviews-track:hover {
