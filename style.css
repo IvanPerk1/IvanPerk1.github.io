@@ -1008,30 +1008,36 @@ footer {
 /* Updates section header */
 .updates-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 .updates-header h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
-    margin: 8px 0 0;
+    margin: 12px 0 0;
 }
 
 .updates-date {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #aaa;
-    padding: 6px 18px;
+    background: linear-gradient(135deg, rgba(0, 200, 83, 0.15), rgba(0, 113, 227, 0.15));
+    border: 1px solid rgba(0, 200, 83, 0.3);
+    color: #00e676;
+    padding: 8px 24px;
     border-radius: 99px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Mac badge — silver/purple to match shimmer */
 .update-badge-mac {
     background: linear-gradient(135deg, #A8A8A8, #7B68EE) !important;
+    color: #fff !important;
+}
+
+/* Windows badge — green to match shimmer */
+.update-badge-win {
+    background: linear-gradient(135deg, #00c853, #0071e3) !important;
     color: #fff !important;
 }
 
@@ -1154,6 +1160,23 @@ html[dir="rtl"] .bot-horizontal {
         padding: 10px 18px;
         min-width: 140px;
     }
+    .updates-header h2 {
+        font-size: 40px;
+    }
+    .updates-date {
+        font-size: 17px;
+        padding: 10px 28px;
+    }
+    .bot-horizontal {
+        padding: 40px 56px !important;
+        gap: 56px;
+    }
+    .bot-horizontal-left h3 {
+        font-size: 26px;
+    }
+    .bot-horizontal-left p {
+        font-size: 17px;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -1171,6 +1194,28 @@ html[dir="rtl"] .bot-horizontal {
         font-size: 16px;
         padding: 10px 20px;
         min-width: 160px;
+    }
+    .updates-header h2 {
+        font-size: 44px;
+    }
+    .updates-date {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
+    .bot-horizontal {
+        padding: 48px 64px !important;
+        gap: 64px;
+    }
+    .bot-horizontal-left h3 {
+        font-size: 30px;
+    }
+    .bot-horizontal-left p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .bot-horizontal-right .update-feature {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
 
@@ -1195,8 +1240,15 @@ html[dir="rtl"] .bot-horizontal {
     .bot-horizontal-right {
         align-items: center;
     }
+    .updates-header {
+        margin-bottom: 24px;
+    }
     .updates-header h2 {
         font-size: 24px;
+    }
+    .updates-date {
+        font-size: 14px;
+        padding: 6px 16px;
     }
 }
 
