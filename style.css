@@ -964,6 +964,75 @@ footer {
     opacity: 1;
 }
 
+/* Downloads highlight */
+.downloads-highlight {
+    color: var(--accent-blue);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* Reviews Marquee */
+.reviews-marquee {
+    margin-top: 48px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.reviews-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: marquee 60s linear infinite;
+}
+
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+.review-card {
+    flex-shrink: 0;
+    width: 280px;
+    padding: 24px;
+    border-radius: var(--border-radius);
+    text-align: left;
+}
+
+.review-stars {
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 0 0 12px 0;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+.review-author {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .reviews-marquee {
+        margin-top: 32px;
+    }
+    .review-card {
+        width: 240px;
+        padding: 20px;
+    }
+}
+
 /* Shimmer wrapper — animated gradient border for banners */
 .shimmer-wrapper {
     position: relative;
