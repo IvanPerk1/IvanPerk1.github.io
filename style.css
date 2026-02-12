@@ -311,6 +311,49 @@ html[dir="rtl"] .footer-links a {
     margin-right: 32px;
 }
 
+html[dir="rtl"] .nav-logo img {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+html[dir="rtl"] .footer-logo {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+html[dir="rtl"] .mac-hero-row {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .mac-step {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html[dir="rtl"] .mac-timeline .mac-step:not(:last-child)::after {
+    left: auto;
+    right: 18px;
+}
+
+html[dir="rtl"] .popular-badge,
+html[dir="rtl"] .lifetime-badge {
+    right: auto;
+    left: 24px;
+}
+
+html[dir="rtl"] .price-old {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+html[dir="rtl"] .review-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .bot-horizontal-left {
+    text-align: right;
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
