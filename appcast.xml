@@ -28,30 +28,5 @@
                 length="3006116"
             />
         </item>
-        <item>
-            <title>Version 1.0.0</title>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <h2>Wake PC Agent 1.0.0</h2>
-                <ul>
-                    <li>Initial release</li>
-                    <li>Shutdown, restart, sleep, lock screen</li>
-                    <li>Volume control</li>
-                    <li>Brightness control</li>
-                    <li>Scheduled shutdown/restart</li>
-                    <li>QR code pairing with iOS app</li>
-                    <li>19 languages</li>
-                </ul>
-            ]]></description>
-            <pubDate>Mon, 10 Feb 2026 12:00:00 +0000</pubDate>
-            <enclosure
-                url="https://github.com/IvanPerk1/IvanPerk1.github.io/releases/download/v1.0.0-mac/WakePCAgent.dmg"
-                type="application/octet-stream"
-                sparkle:edSignature="x7Nb25HKpBU5mnZ3KJSjHWSN66rvyg8Mxu+16nM5kdO1xxzlefRZZfMsgDj4u+JBy2g0OMCAb4LF/Ih+Nku2Ag=="
-                length="3008545"
-            />
-        </item>
     </channel>
 </rss>
