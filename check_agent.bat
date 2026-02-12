@@ -41,7 +41,7 @@ goto :eof
 :collect
 
 echo ============================================
-echo   WakePC Agent -- Full Diagnostics v2.2
+echo   WakePC Agent -- Full Diagnostics v2.3
 echo   %date% %time%
 echo ============================================
 echo.
